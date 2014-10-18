@@ -1,7 +1,8 @@
 *{
     padding:0;
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Halant', serif;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 
 
@@ -13,9 +14,10 @@
 
 
 h1 {
-
+  font-family: 'Rozha One', serif;
   font-size: 40px;
-  color: #F5A623;
+  color: #3300cc;
+  /*color: #F5A623;*/
   line-height: 48px;
   display: inline;
 }
@@ -23,16 +25,18 @@ h1 {
 h2 {
   font-style: bold;
   font-size: 24px;
-  color: #999999;
+  color: #3300cc;
+  /*color: #999999;*/
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
+  /*font-style: italic;*/
+  font-weight: 500;
+  font-size: 24px;
   color: #000000;
-  line-height: 22px;
+  line-height: 26px;
 }
 
 h4 {
@@ -80,27 +84,51 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #F3F3F3;
-  line-height: 28px;
+  /*font-style: italic;*/
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffff00;
+  /*color: #ff9900;*/
+  /*color: #F3F3F3;*/
+  line-height: 30px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #3300cc;
+  /*color: #F5AE23;*/
+  /*float: none;*/
+  /*clear : both;*/
   display: none;
 }
 
 #skills {
-  display: none;
+  /*display: none;*/
+}
+
+.skill {
+  font-size: 18px;
 }
 
 .orange {
   background-color: #F5AE23;
 }
 
+.blue-violet-text {
+  color: #3300cc;
+  /*color: #3300cc;*/
+}
+
+.red-orange-text {
+  color: #ff3300;
+}
+
 .orange-text {
-  color: #F5AE23;
+  color: #ff9900;
+  /*color: #F5AE23;*/
+}
+
+.yellow-text {
+  color: #ffff00;
 }
 
 .white-text {
@@ -120,7 +148,10 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #ededed;
+  background-image: url(../images/vichy.png);
+  /*background-color: #484848;*/
+  /*background-color: #cfcfcf;*/
 }
 
 .flex-box {
@@ -140,6 +171,11 @@ ul {
   list-style-type: none;
 }
 
+li {
+  list-style-type: none;
+  font-size: 16px;
+  /*float: left;*/
+}
 
 .biopic {
   float: left;
@@ -212,8 +248,18 @@ span {
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
-  #skills,
+  /*#skills,*/
   .biopic {
     display: block;
   }
+}
+
+/*added for quiz but not sure about yellow color
+.gm-style-iw {
+  background-color: yellow;
+}
+*/
+
+div.gm-style-iw > div > div {
+  font-weight: bold;
 }
