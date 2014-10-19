@@ -133,13 +133,16 @@ project.displayProject = function() {
 project.displayProject();
 
 //TODO - fix styling
+//note - schools is an array with one element; education.schools.degree and education.schools.major are both arrays with 2 elements
 var education = {
-	"schools":{ "name": "UCLA",
+	"schools": [
+						{ "name": "UCLA",
 							"degree" : ["B.S.", "B.A."],
 							"major" : ["Psychobiology", "English Literature"],
 							"dates" : "1988 - 1993",
 							"location" : "Los Angeles, CA"
-						},
+						}
+	],
 	"onlineClasses": [ 
 						{	"title" : "Intro to HTML and CSS (Front-end Web Dev Nanodegree series)",
 							"school" : "Udacity",
@@ -194,19 +197,20 @@ var education = {
 	]	
 };
 
+//note - hardcoded schools[0] even though there is only one array item; otherwise google maps display would break
 education.displaySchool = function() {
-	for (item in education.schools.degree) {
+	for (item in education.schools[0].degree) {
 		$('#education').append(HTMLschoolStart);
-		var formattedSchoolName = HTMLschoolName.replace(["%data%"], education.schools.name);
-		var formattedSchoolDegree = HTMLschoolDegree.replace(["%data%"], education.schools.degree[item]);
-		var formattedSchoolMajor  = HTMLschoolMajor.replace(["%data%"], education.schools.major[item]);
-		var formattedSchoolDates = HTMLschoolDates.replace(["%data%"], education.schools.dates);
-		var formattedSchoolLocation = HTMLschoolLocation.replace(["%data%"], education.schools.location);
+		var formattedSchoolName = HTMLschoolName.replace(["%data%"], education.schools[0].name);
+		var formattedSchoolDegree = HTMLschoolDegree.replace(["%data%"], education.schools[0].degree[item]);
+		var formattedSchoolMajor  = HTMLschoolMajor.replace(["%data%"], education.schools[0].major[item]);
+		var formattedSchoolDates = HTMLschoolDates.replace(["%data%"], education.schools[0].dates);
+		var formattedSchoolLocation = HTMLschoolLocation.replace(["%data%"], education.schools[0].location);
 		$('.education-entry:last').append(formattedSchoolName + formattedSchoolDegree);
 		$('.education-entry:last').append(formattedSchoolDates);
 		$('.education-entry:last').append(formattedSchoolLocation);
 		$('.education-entry:last').append(formattedSchoolMajor);
-	}
+	}		
 }
 
 education.displaySchool();
