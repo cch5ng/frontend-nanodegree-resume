@@ -52,6 +52,28 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+table {
+  margin:10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  /*padding: 0;*/
+  border: 1px solid white;
+  border-spacing: 0;
+}
+
+tr, th, td {
+  padding: 6px;
+  border: 1px solid white;
+  /*margin: 0; */
+}
+
+.dark-row {
+  background-color: #aaaaff;
+}
+
+.light-row {
+  background-color: #e6e6fa;
+}
 
 .date-text {
   font-style: italic;

@@ -57,11 +57,11 @@ var HTMLonlineURL = "<br><a href='#'>%data%</a>";
 
 var HTMLskillChartTable = "<div><table class='skills-row'></table></div>";
 var HTMLskillChartRow = "<tr class='skills-entry'></tr>";
-var HTMLskillChartHeadings = "<th>Name</th> <th>Level</th> <th>Dates</th> <th>Frequency</th>"
-var HTMLskillChartName = "<td class='skill-chart-name'>%data%</td>";
-var HTMLskillChartLevel = "<td class='skill-chart-level'>%data%</td>";
-var HTMLskillChartDates = "<td class='skill-chart-dates'>%data%</td>";
-var HTMLskillChartFrequency = "<td class='skill-chart-freq'>%data%</td>";
+var HTMLskillChartHeadings = "<th class='dark-row'>Name</th> <th class='dark-row'>Level</th> <th class='dark-row'>Dates</th> <th class='dark-row'>Frequency</th>"
+var HTMLskillChartName = "<td class='light-row skill-chart-name'>%data%</td>";
+var HTMLskillChartLevel = "<td class='light-row skill-chart-level'>%data%</td>";
+var HTMLskillChartDates = "<td class='light-row skill-chart-dates'>%data%</td>";
+var HTMLskillChartFrequency = "<td class='light-row skill-chart-freq'>%data%</td>";
 
 var internationalizeButton = "<button>Internationalize</button>";
 var googleMap = "<div id='map'></div>";
