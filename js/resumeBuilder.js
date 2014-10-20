@@ -1,6 +1,9 @@
 
 //Note that the main job title comes from the work object
-//TODO - fix formatting on the highlighted skills list
+//TODO - would like to fix up the layout (4-5 col grid); diff colors and diff grid layout
+//TODO - fix formatting on the highlighted skills list; remove bear_temp.gif from github repo
+//TODO - need to fix contact footer; what should it do?
+
 var bio = {
 	"name" : "Carol Chung",
 	"role" : "Web Developer",
@@ -9,32 +12,34 @@ var bio = {
 		"email" : "cch5ng@gmail.com",
 		"github" : "cch5ng",
 		"twitter" : "cch5ng",
-		"location" : "Torrance, CA"
+		"location" : "Los Angeles, CA"
 	},
 	"picUrl" : "images/bear_temp.gif",
 	"welcomeMsg" : "Namaste - I bow to you",
-	"skills" : ["HTML", " CSS", " JavaScript", " Python", " Java", " SQL", " Selenium"]
+	"skills" : [" Python", " JavaScript", " HTML", " CSS", " Java", " Selenium", " Git"]
 };
 
 bio.displayBio = function() {
-	//var formattedBioPic = HTMLbioPic.replace(["%data%"], bio.picUrl);
 	var formattedName = HTMLheaderName.replace(["%data%"],bio.name);
 	var formattedRole = HTMLheaderRole.replace(["%data%"],bio.role);
+	var formattedLocation = HTMLlocation.replace(["%data%"],bio.contacts.location);
 	var formattedEmail = HTMLemail.replace(["%data%"], bio.contacts.email);
 	var formattedMobile = HTMLmobile.replace(["%data%"], bio.contacts.mobile);
 	var formattedGithub = HTMLgithub.replace(["%data%"], bio.contacts.github);
-	var formattedTwitter = HTMLtwitter.replace(["%data%"], bio.contacts.twitter);
+	//commenting out to reduce clutter
+	//var formattedTwitter = HTMLtwitter.replace(["%data%"], bio.contacts.twitter);
+	//var formattedBioPic = HTMLbioPic.replace(["%data%"], bio.picUrl);
 	//var formattedWelcomeMsg = HTMLWelcomeMsg.replace(["%data%"], bio.welcomeMsg);
 
-	//$("#header").prepend(formattedWelcomeMsg);
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
-	//$("#header").prepend(formattedBioPic);
-
+	$("#topContacts").append(formattedLocation);
 	$("#topContacts").append(formattedEmail);
 	$("#topContacts").append(formattedMobile);
 	$("#topContacts").append(formattedGithub);
-	$("#topContacts").append(formattedTwitter);
+	//$("#topContacts").append(formattedTwitter);
+	//$("#header").prepend(formattedWelcomeMsg);
+	//$("#header").prepend(formattedBioPic);
 
 }
 
@@ -50,6 +55,12 @@ bio.displaySkills = function() {
 
 bio.displayBio();
 bio.displaySkills();
+
+var displayNavTab = function() {
+	$("#header").prepend('<div id="menu_tab"></div>');	
+}
+
+displayNavTab();
 
 var work = {
 	"jobs" : [
@@ -213,8 +224,6 @@ education.displaySchool = function() {
 	}		
 }
 
-education.displaySchool();
-
 education.displayOnlineClasses = function() {
 	$('#education').append(HTMLonlineClasses);
 	for (course in education.onlineClasses) {
@@ -230,58 +239,70 @@ education.displayOnlineClasses = function() {
 	}
 }
 
+education.displaySchool();
 education.displayOnlineClasses();
 
-//TODO - skills chart: json, logic to format and display; need to add vars to helper.js
-
+//TODO - test how the table behaves with diff breakpoints
 var skillsChart = {
 	skills: [
 				{
+					"name" : "Python",
+					"level" : "Intermediate",
+					"dates" : "2012 - present",
+					"frequency": "Bi-weekly"
+				},
+				{
+					"name" : "JavaScript",
+					"level" : "Intermediate",
+					"dates" : "2010 - present",
+					"frequency": "Weekly" 
+				},
+				{
 					"name" : "HTML",
 					"level" : "Intermediate",
-					"dates" : "",
+					"dates" : "1998 - present",
 					"frequency": "Weekly" 
 				},
 				{
 					"name" : "CSS",
 					"level" : "Intermediate",
-					"dates" : "",
+					"dates" : "2003 - present",
 					"frequency": "Weekly"
 				},
 				{
-					"name" : "JavaScript",
-					"level" : "Intermediate",
-					"dates" : "",
-					"frequency": "Weekly" 
+					"name" : "Git",
+					"level" : "Beginner",
+					"dates" : "2013 - present",
+					"frequency": "Monthly"
 				},
 				{
-					"name" : "Python",
+					"name" : "Selenium WebDriver",
 					"level" : "Intermediate",
-					"dates" : "",
+					"dates" : "2013 - present",
 					"frequency": "Monthly"
 				},
 				{
 					"name" : "Java",
 					"level" : "Intermediate",
-					"dates" : "",
-					"frequency": "Bi-monthly"
+					"dates" : "2013 - present",
+					"frequency": "Quarterly"
 				},
 				{
 					"name" : "SQL",
 					"level" : "Intermediate",
-					"dates" : "",
-					"frequency": "Bi-monthly" 
-				},
-				{
-					"name" : "Selenium WebDriver",
-					"level" : "Intermediate",
-					"dates" : "",
-					"frequency": "Bi-monthly"
+					"dates" : "2008 - present",
+					"frequency": "Quarterly" 
 				},
 				{
 					"name" : "Android",
 					"level" : "Beginner",
-					"dates" : "",
+					"dates" : "2014 - present",
+					"frequency": "Bi-monthly"
+				},
+				{
+					"name" : "Node.js",
+					"level" : "Beginner",
+					"dates" : "2013 - present",
 					"frequency": "Bi-monthly"
 				}
 	]
@@ -305,10 +326,5 @@ skillsChart.displaySkills = function() {
 }
 
 skillsChart.displaySkills();
-
-//TODO - need to fix contact footer; what should it do?
-
-//TODO - would like to fix up the layout; diff colors and diff grid layout
-
 
 $("#mapDiv").append(googleMap);
