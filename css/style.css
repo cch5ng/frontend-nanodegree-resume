@@ -96,7 +96,6 @@ tr, th, td {
   color: #999999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -288,11 +287,15 @@ div.gm-style-iw > div > div {
 
   #header {
     padding-top: 20px;
-    height: 375px;
+    height: 400px;
+    text-align: center;
   }
 
-  h1, span {
-    text-align: center;
+  h1 {
+    display: block;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 }
