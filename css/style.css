@@ -15,11 +15,15 @@ h1 {
   font-family: 'Rozha One', serif;
   font-size: 40px;
   color: #3300cc;
-  /*color: #F5A623;*/
   line-height: 48px;
   padding:10px;
   padding-left: 5%;
   display: inline;
+}
+
+#name {
+  margin-top: 140px;
+  padding-top: 140px;
 }
 
 h2 {
@@ -28,7 +32,7 @@ h2 {
   color: #3300cc;
   /*color: #999999;*/
   line-height: 29px;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 h3 {
@@ -66,6 +70,10 @@ tr, th, td {
   padding: 6px;
   border: 1px solid white;
   /*margin: 0; */
+}
+
+#workExperience {
+  clear: both;
 }
 
 .dark-row {
@@ -107,26 +115,15 @@ a {
 }
 
 .welcome-message {
-  /*font-style: italic;*/
   font-weight: 500;
   font-size: 24px;
   color: #ffff00;
-  /*color: #ff9900;*/
-  /*color: #F3F3F3;*/
   line-height: 30px;
 }
 
 #skillsH3 {
   color: #ff3300;
-  /*color: #3300cc;*/
-  /*color: #F5AE23;*/
-  /*float: none;*/
-  /*clear : both;*/
   display: none;
-}
-
-#skills {
-  /*display: none;*/
 }
 
 .skill {
@@ -139,7 +136,6 @@ a {
 
 .blue-violet-text {
   color: #3300cc;
-  /*color: #3300cc;*/
 }
 
 .red-orange-text {
@@ -148,7 +144,6 @@ a {
 
 .orange-text {
   color: #ff9900;
-  /*color: #F5AE23;*/
 }
 
 .yellow-text {
@@ -170,12 +165,10 @@ a {
   background-color: #4A4A4A;
 }
 
-/* TODO: Replace with image later */
 #header {
   background-color: #ededed;
   background-image: url(../images/vichy.png);
-  /*background-color: #484848;*/
-  /*background-color: #cfcfcf;*/
+  height: 394px;
 }
 
 .flex-box {
@@ -189,7 +182,7 @@ a {
 
 .center-content {
   margin: 0 auto;
-  /*padding: 5%;*/
+  padding-bottom: 1%;
 }
 
 ul {
@@ -199,7 +192,6 @@ ul {
 li {
   list-style-type: none;
   font-size: 16px;
-  /*float: left;*/
 }
 
 .biopic {
@@ -235,7 +227,8 @@ span {
 }
 
 #menu_tab {
-  margin-left: 97%;
+  /*margin-left: 97%;*/
+  float: right;
   z-index: 5;
   background-color: #ffffff;
   border-left: 3px solid #ccccff;
@@ -243,9 +236,24 @@ span {
   border-bottom: 3px solid #ccccff;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  width: 5%;
-  height: 120px;
-  /*vertical-align: top;*/
+  width: 35px;
+  height: 140px;
+}
+
+#menu {
+  /*float: right;*/
+  z-index: 3;
+  background-color: #ffffff;
+  margin-left: 90%;
+  padding-top: 1%;
+  padding-left: 1%;
+  border-bottom-left-radius: 12px;
+  width: 10%;
+  height: 180px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media only screen and (max-width: 1024px) {

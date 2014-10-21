@@ -23,6 +23,7 @@ var HTMLgithub = "<li class='flex-item'><span class='blue-violet-text'>github</s
 var HTMLblog = "<li class='flex-item'><span class='blue-violet-text'>blog</span><span class=''>%data%</span></li>";
 var HTMLlocation = "<li class='flex-item'><span class='blue-violet-text'>location</span><span class=''>%data%</span></li>";
 
+
 var HTMLbioPic = "<img src='%data%' class='biopic'>";
 var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
 

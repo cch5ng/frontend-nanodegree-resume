@@ -15,7 +15,7 @@ var bio = {
 		"location" : "Los Angeles, CA"
 	},
 	"picUrl" : "images/bear_temp.gif",
-	"welcomeMsg" : "Namaste - I bow to you",
+	"welcomeMsg" : "Namaste - Honor the spirit in you",
 	"skills" : [" Python", " JavaScript", " HTML", " CSS", " Java", " Selenium", " Git"]
 };
 
@@ -55,6 +55,16 @@ bio.displaySkills = function() {
 
 bio.displayBio();
 bio.displaySkills();
+
+var displayMenu = function() {
+	$("#header").prepend('<div id="menu" class="hidden"></div>');
+	$("#menu").append('<a href="#">Projects</a>');
+	$("#menu").append('<a href="#">Education</a>');
+	$("#menu").append('<a href="#">Online Classes</a>');
+	$("#menu").append('<a href="#">Skills</a>');
+}
+
+displayMenu();
 
 var displayNavTab = function() {
 	$("#header").prepend('<div id="menu_tab"></div>');	
