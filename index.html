@@ -57,7 +57,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     display by looking at the id or at what's written between the <h2> tags.
     -->
     <div id="header" class="center-content">
-      <ul id="topContacts" class='flex-box'></ul>      
+      <ul id="topContacts" ></ul>      
     </div>
 <!--    <div style='clear: both;'></div> -->
     <div id="workExperience" class='gray'>
@@ -113,7 +113,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   */
 
 
-  if(document.getElementsByClassName("flex-item").length === 0) {
+  if(document.getElementsByClassName("contact").length === 0) {
     //document.getElementById("topContacts").style.display = "none";
     document.getElementById("topContacts").style.backgroundColor = "black";
   }

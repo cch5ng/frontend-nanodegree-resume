@@ -4,6 +4,7 @@
 //TODO - fix formatting on the highlighted skills list; remove bear_temp.gif from github repo
 //TODO - need to fix contact footer; what should it do?
 
+//bio.skills displays better when limited to 6 items
 var bio = {
 	"name" : "Carol Chung",
 	"role" : "Web Developer",
@@ -16,7 +17,7 @@ var bio = {
 	},
 	"picUrl" : "images/bear_temp.gif",
 	"welcomeMsg" : "Namaste - Honor the spirit in you",
-	"skills" : [" Python", " JavaScript", " HTML", " CSS", " Java", " Selenium", " Git"]
+	"skills" : [" Python", " JavaScript", " HTML", " CSS", " Java", " Selenium"]
 };
 
 bio.displayBio = function() {
@@ -55,22 +56,6 @@ bio.displaySkills = function() {
 
 bio.displayBio();
 bio.displaySkills();
-
-var displayMenu = function() {
-	$("#header").prepend('<div id="menu" class="hidden"></div>');
-	$("#menu").append('<a href="#">Projects</a>');
-	$("#menu").append('<a href="#">Education</a>');
-	$("#menu").append('<a href="#">Online Classes</a>');
-	$("#menu").append('<a href="#">Skills</a>');
-}
-
-displayMenu();
-
-var displayNavTab = function() {
-	$("#header").prepend('<div id="menu_tab"></div>');	
-}
-
-displayNavTab();
 
 var work = {
 	"jobs" : [

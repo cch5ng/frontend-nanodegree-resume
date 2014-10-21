@@ -16,19 +16,19 @@ var HTMLheaderName = "<h1 id='name'>%data%</h1>";
 var HTMLheaderRole = "<span>%data%</span><hr/>";
 
 var HTMLcontactGeneric = "<li class='flex-item'><span class='blue-violet-text'>%contact%</span><span class=''>%data%</span></li>";
-var HTMLmobile = "<li class='flex-item'><span class='blue-violet-text'>mobile</span><span class=''>%data%</span></li>";
-var HTMLemail = "<li class='flex-item'><span class='blue-violet-text'>email</span><span class=''>%data%</span></li>";
-var HTMLtwitter = "<li class='flex-item'><span class='blue-violet-text'>twitter</span><span class=''>%data%</span></li>";
-var HTMLgithub = "<li class='flex-item'><span class='blue-violet-text'>github</span><span class=''>%data%</span></li>";
-var HTMLblog = "<li class='flex-item'><span class='blue-violet-text'>blog</span><span class=''>%data%</span></li>";
-var HTMLlocation = "<li class='flex-item'><span class='blue-violet-text'>location</span><span class=''>%data%</span></li>";
+var HTMLmobile = "<li class='contact col-xs-12 col-sm-4 col-md-3'><span class='blue-violet-text'>mobile</span><span class=''>%data%</span></li>";
+var HTMLemail = "<li class='contact col-xs-12 col-sm-4 col-md-3'><span class='blue-violet-text'>email</span><span class=''>%data%</span></li>";
+var HTMLtwitter = "<li class='contact col-xs-12 col-sm-4 col-md-3'><span class='blue-violet-text'>twitter</span><span class=''>%data%</span></li>";
+var HTMLgithub = "<li class='contact col-xs-12 col-sm-4 col-md-3'><span class='blue-violet-text'>github</span><span class=''>%data%</span></li>";
+var HTMLblog = "<li class='contact col-xs-12 col-sm-4 col-md-3'><span class='blue-violet-text'>blog</span><span class=''>%data%</span></li>";
+var HTMLlocation = "<li class='contact col-xs-12 col-sm-4 col-md-3'><span class='blue-violet-text'>location</span><span class=''>%data%</span></li>";
 
 
 var HTMLbioPic = "<img src='%data%' class='biopic'>";
 var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
 
-var HTMLskillsStart = "<h3 id='skillsH3'>Skills at a Glance</h3><ul id='skills' class='flex-box'></ul>";
-var HTMLskills = "<li class='flex-item'><span class='skill blue-violet-text'>%data%</span></li>";
+var HTMLskillsStart = "<h3 id='skillsH3'>Skills at a Glance</h3><ul id='skills'></ul>";
+var HTMLskills = "<li class='col-xs-6 col-sm-3 col-md-2'><span class='skill blue-violet-text'>%data%</span></li>";
 
 var HTMLworkStart = "<div class='work-entry'></div>";
 var HTMLworkEmployer = "<a href='#'>%data%";
