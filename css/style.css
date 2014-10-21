@@ -194,6 +194,10 @@ li {
   font-size: 16px;
 }
 
+.push-left {
+  padding-left: 0;
+}
+
 .biopic {
   float: left;
   padding: 10px;
