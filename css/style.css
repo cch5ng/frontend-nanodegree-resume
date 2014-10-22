@@ -210,6 +210,10 @@ ul#topContacts {
   padding-top: 0;
 }
 
+ul#footerContacts {
+  padding-bottom: 40px;
+}
+
 #skills {
   padding-top: 10px;
 }
@@ -327,6 +331,10 @@ div.gm-style-iw > div > div {
   .navbar-nav>li>a {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .navbar {
+    border-radius: 0;
   }
 
 }

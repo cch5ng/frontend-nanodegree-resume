@@ -71,7 +71,6 @@
           </div> <!-- end collapse -->
         </div> <!-- end container-fluid-->
       </nav>
-
     </div>
     <div id="header" class="checkerboard center-content">
       <ul id="topContacts" ></ul>      
@@ -92,10 +91,9 @@
     <div id="mapDiv" class='gray'>
       <h2>Where I've Lived and Worked</h2>
     </div>
-    <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
-      <ul id="footerContacts" class="flex-box">
-      </ul>
+    <div id="letsConnect" class='light-row'>
+      <h2 class='dark-row center-text'>Let's Connect</h2>
+      <ul id="footerContacts"></ul>
     </div>
   </div>
 
@@ -154,7 +152,7 @@
 //    document.getElementById("skillsChart").style.display = "none";
     document.getElementById("skillsChart").style.backgroundColor = "black";
   }
-  if(document.getElementsByClassName("flex-item").length === 0) {
+  if(document.getElementsByClassName("contact").length === 0) {
 //    document.getElementById("letsConnect").style.display = "none";
     document.getElementById("letsConnect").style.backgroundColor = "black";
   }

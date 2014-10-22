@@ -1,7 +1,5 @@
 
 //Note that the main job title comes from the work object
-//TODO - would like to fix up the layout (4-5 col grid); diff colors and diff grid layout
-//TODO - fix formatting on the highlighted skills list; remove bear_temp.gif from github repo
 //TODO - need to fix contact footer; what should it do?
 
 //bio.skills displays better when limited to 6 items
@@ -38,6 +36,12 @@ bio.displayBio = function() {
 	$("#topContacts").append(formattedEmail);
 	$("#topContacts").append(formattedMobile);
 	$("#topContacts").append(formattedGithub);
+	$("#footerContacts").append(formattedLocation);
+	$("#footerContacts").append(formattedEmail);
+	$("#footerContacts").append(formattedMobile);
+	$("#footerContacts").append(formattedGithub);
+
+
 	//$("#topContacts").append(formattedTwitter);
 	//$("#header").prepend(formattedWelcomeMsg);
 	//$("#header").prepend(formattedBioPic);
@@ -138,7 +142,6 @@ project.displayProject = function() {
 
 project.displayProject();
 
-//TODO - fix styling
 //note - schools is an array with one element; education.schools.degree and education.schools.major are both arrays with 2 elements
 var education = {
 	"schools": [
@@ -226,18 +229,14 @@ education.displayOnlineClasses = function() {
 		var formattedOnlineClassTitle = HTMLonlineTitle.replace(["%data%"], education.onlineClasses[course].title).replace(["%classUrl%"], education.onlineClasses[course].url);
 		var formattedOnlineClassSchool = HTMLonlineSchool.replace(["%data%"], education.onlineClasses[course].school);
 		var formattedOnlineClassDates = HTMLonlineDates.replace(["%data%"], education.onlineClasses[course].dates);
-		//var formattedOnlineClassURL = HTMLonlineURL.replace(["%data%"], education.onlineClasses[course].url);
 		$('.education-entry:last').append(formattedOnlineClassTitle + formattedOnlineClassSchool);
 		$('.education-entry:last').append(formattedOnlineClassDates);
-		//$('.education-entry:last').append(formattedOnlineClassURL);
-
 	}
 }
 
 education.displaySchool();
 education.displayOnlineClasses();
 
-//TODO - test how the table behaves with diff breakpoints
 var skillsChart = {
 	skills: [
 				{
