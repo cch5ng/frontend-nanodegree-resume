@@ -214,6 +214,10 @@ ul#footerContacts {
   padding-bottom: 40px;
 }
 
+ul.nav {
+  padding-right: 3.5%;
+}
+
 #skills {
   padding-top: 10px;
 }
@@ -283,8 +287,7 @@ div.gm-style-iw > div > div {
 }
 
 #navigation {
-  z-index: 5;
-  position: relative;
+  height: 70px;
 }
 
 .transparent {
@@ -294,6 +297,7 @@ div.gm-style-iw > div > div {
 /* overwriting bootstrap.min.css */
 .navbar {
   margin-bottom: 0;
+  height: 70px;
   border: none;
 }
 
@@ -380,6 +384,11 @@ div.gm-style-iw > div > div {
     margin-right: 3%;
     width: 94%;
     max-width: 94%;
+  }
+
+  ul#footerContacts {
+    padding-bottom: 40px;
+    height: 125px;
   }
 
 }

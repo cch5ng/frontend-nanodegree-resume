@@ -10,33 +10,10 @@
   <link href='http://fonts.googleapis.com/css?family=Rozha+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Halant:400, 500' rel='stylesheet' type='text/css'>
 
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
-
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  -->
-<!--  <script src="js/jQuery.js"></script>-->
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-  <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
-
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
-  <meta name="viewport" content="width=device-width">
 </head>
 
 <body unresolved>
@@ -72,9 +49,9 @@
         </div> <!-- end container-fluid-->
       </nav>
     </div>
-    <div id="header" class="checkerboard center-content">
+    <header id="header" class="checkerboard center-content">
       <ul id="topContacts" ></ul>      
-    </div>
+    </header>
 <!--    <div style='clear: both;'></div> -->
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
@@ -91,10 +68,11 @@
     <div id="mapDiv" class='gray'>
       <h2>Where I've Lived and Worked</h2>
     </div>
-    <div id="letsConnect" class='light-row'>
+
+    <footer id="letsConnect" class='light-row'>
       <h2 class='dark-row center-text'>Let's Connect</h2>
       <ul id="footerContacts"></ul>
-    </div>
+    </footer>
   </div>
 
   <!--
