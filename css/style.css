@@ -74,6 +74,11 @@ table {
   border-spacing: 0;
 }
 
+.table {
+  width: 90%;
+  max-width: 90%;
+}
+
 tr, th, td {
   padding: 6px;
   border: 1px solid white;
@@ -360,6 +365,13 @@ div.gm-style-iw > div > div {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .table {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    max-width: 94%;
   }
 
 }

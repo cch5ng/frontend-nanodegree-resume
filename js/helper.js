@@ -56,7 +56,7 @@ var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div><br/>";
 var HTMLonlineURL = "<a href='#' class='online-class'>%data%</a>";
 
-var HTMLskillChartTable = "<div><table class='skills-row'></table></div>";
+var HTMLskillChartTable = "<div><table class='skills-row table table-condensed table-responsive'></table></div>";
 var HTMLskillChartRow = "<tr class='skills-entry'></tr>";
 var HTMLskillChartHeadings = "<th class='dark-row'>Name</th> <th class='dark-row'>Level</th> <th class='dark-row'>Dates</th> <th class='dark-row'>Frequency</th>"
 var HTMLskillChartName = "<td class='light-row skill-chart-name'>%data%</td>";
