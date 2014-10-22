@@ -119,11 +119,13 @@ var project = {
 	"projects" : [
 						{	"title" : "Team Lottery Application",
 							"dates" : "Aug 2013 - Oct 2013",
-							"description" : "Front-end JS application for creating random beach volleyball teams. Test plan, test cases, and Selenium scripts (WebDriver/Python). http://sqa8.wordpress.com/2014/02/24/volleyball-team-app-tests/"
+							"description" : "Front-end JS application for creating random beach volleyball teams. Test plan, test cases, and Selenium scripts (WebDriver/Python).",
+							"url" : "http://sqa8.wordpress.com/2014/02/24/volleyball-team-app-tests/"
 						},
 						{	"title" : "Google Keep Tests",
 							"dates" : "April 2014 - May 2014",
-							"description" : "Test plan, test cases, and Selenium scripts (WebDriver/Python). http://sqa8.wordpress.com/2014/04/18/google-keep-tests/"
+							"description" : "Test plan, test cases, and Selenium scripts (WebDriver/Python).",
+							"url" : "http://sqa8.wordpress.com/2014/04/18/google-keep-tests/"
 						} 
 	] 
 };
@@ -131,7 +133,7 @@ var project = {
 project.displayProject = function() {
 	for (proj in project.projects) {
 		$("#projects").append(HTMLprojectStart);
-		var formattedTitle = HTMLprojectTitle.replace(["%data%"], project.projects[proj].title);
+		var formattedTitle = HTMLprojectTitle.replace(["%data%"], project.projects[proj].title).replace(["%url%"], project.projects[proj].url);
 		var formattedDates = HTMLprojectDates.replace(["%data%"], project.projects[proj].dates);
 		var formattedDescription = HTMLprojectDescription.replace(["%data%"], project.projects[proj].description);
 		$(".project-entry:last").append(formattedTitle);
