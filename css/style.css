@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     font-family: 'Halant', serif;
-    font-size: 16px;
+    font-size: 16.5px;
 }
 
 .education-entry, .work-entry, .project-entry {
@@ -11,7 +11,13 @@
 }
 
 #header {
-  padding-top: 80px;
+  padding-top: 30px;
+  height: 280px;
+  background-color: #ededed;
+}
+
+.checkerboard {
+  background-image: url(../images/vichy.png);
 }
 
 h1 {
@@ -24,14 +30,6 @@ h1 {
   display: inline;
 }
 
-h2 {
-  margin: 0;
-  font-style: bold;
-  font-size: 24px;
-  color: #3300cc;
-  line-height: 29px;
-}
-
 h3 {
   padding-top: 20px;
   padding-left: 5%;
@@ -41,20 +39,31 @@ h3 {
   line-height: 26px;
 }
 
-h4 {
-  font-style: bold;
-  font-size: 14px;
-  color: #4A4A4A;
-  line-height: 17px;
-}
-
-h2, h4, h5 {
+h2, h5 {
   padding-top:15px;
   padding-right:10px;
   padding-bottom:10px;
   padding-left: 10px;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 5px;
+  font-style: bold;
+  font-size: 24px;
+  color: #3300cc;
+  line-height: 29px;
+}
+
+h4 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+  line-height: 20px;
+  color: #4A4A4A;
+  font-weight: 400;
+/*  font-style: bold; */
 }
 
 table {
@@ -86,7 +95,7 @@ tr, th, td {
   font-style: italic;
   font-size: 14px;
   color: #999999;
-  line-height: 16px;
+  /*line-height: 14px;*/
   float: left;
 }
 
@@ -99,7 +108,7 @@ tr, th, td {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   color: #333333;
   line-height: 21px;
 }
@@ -109,6 +118,15 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+a.online-class {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+a.nav-menu {
+  margin-top: 0;
 }
 
 .welcome-message {
@@ -162,12 +180,6 @@ a {
   background-color: #4A4A4A;
 }
 
-#header {
-  background-color: #ededed;
-  background-image: url(../images/vichy.png);
-  height: 394px;
-}
-
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -187,6 +199,14 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 5%;
+}
+
+ul#topContacts {
+  padding-top: 0;
+}
+
+#skills {
+  padding-top: 10px;
 }
 
 li {
@@ -209,6 +229,9 @@ img {
   padding: 10px;
 }
 
+br {
+  line-height: 1px;
+}
 
 /* Bar chart stuff */
 .chart div {
@@ -223,7 +246,10 @@ img {
 }
 
 span {
-  padding: 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
 }
 
 #letsConnect {
@@ -247,6 +273,33 @@ div.gm-style-iw > div > div {
   font-weight: bold;
 }
 
+#navigation {
+  z-index: 5;
+  position: relative;
+}
+
+.transparent {
+  opacity: 0.9;
+}
+
+/* overwriting bootstrap.min.css */
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar-nav>li>a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 15px;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+}
+
 @media only screen and (max-width: 1024px) {
   #letsConnect {
     margin-top: 5%;
@@ -260,10 +313,17 @@ div.gm-style-iw > div > div {
 }
 
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .biopic {
     display: block;
   }
+
+/* overwriting bootstrap.min.css*/
+  .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -277,7 +337,7 @@ div.gm-style-iw > div > div {
     display: none;
   }
 
-  ul, #skillsH3 {
+  ul, #skillsH3, h2, h3 {
     text-align: center;
   }
 
@@ -291,7 +351,7 @@ div.gm-style-iw > div > div {
 
   #header {
     padding-top: 20px;
-    height: 400px;
+    height: 385px;
     text-align: center;
   }
 

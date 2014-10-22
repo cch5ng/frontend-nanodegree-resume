@@ -1,21 +1,10 @@
 <!DOCTYPE html>
-
-<!--
-This is an HTML document. It contains information about how elements in the website
-are arranged. In other words, it describes the layout of a website.
-
-I can't wait to see the resumes you put together!
-
-Cameron Pittman, Udacity Course Developer
--->
-
-<!--
-The <head> of a website generally links to important resources the page will
-need to load. You'll see a lot of <link>s to CSS files for styles and
-<scripts> for JavaScript files to build interactions.
--->
+<html>
 <head>
   <title>Carol Chung's Resume</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link href="css/style.css" rel="stylesheet" type="text/css"></link>
   <link href='http://fonts.googleapis.com/css?family=Rozha+One' rel='stylesheet' type='text/css'>
@@ -34,7 +23,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   the DOM. jQuery is fast and easy to use, but it doesn't do anything
   you can't accomplish with vanilla (regular) JavaScript.
   -->
-  <script src="js/jQuery.js"></script>
+<!--  <script src="js/jQuery.js"></script>-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
@@ -47,7 +38,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <meta name="viewport" content="width=device-width">
 </head>
+
 <body unresolved>
+
   <div id="main">
   
     <!--
@@ -56,7 +49,31 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content">
+    <div id="navigation" >
+      <nav class="navbar navbar-default checkerboard" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">Brand</a>-->
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#projects" class="nav-menu">Projects</a></li>
+              <li><a href="#education" class="nav-menu">Education</a></li>
+              <li><a href="#onlineClasses" class="nav-menu">Online Classes</a></li>
+              <li><a href="#skillsChart" class="nav-menu">Skills Chart</a></li>
+            </ul>
+          </div> <!-- end collapse -->
+        </div> <!-- end container-fluid-->
+      </nav>
+
+    </div>
+    <div id="header" class="checkerboard center-content">
       <ul id="topContacts" ></ul>      
     </div>
 <!--    <div style='clear: both;'></div> -->
@@ -72,7 +89,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="skillsChart">
       <h2>Skills Chart</h2>
     </div>
-    <div id="mapDiv">
+    <div id="mapDiv" class='gray'>
       <h2>Where I've Lived and Worked</h2>
     </div>
     <div id="letsConnect" class='dark-gray'>
@@ -146,4 +163,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     document.getElementById("mapDiv").style.backgroundColor = "black";
   }
   </script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
 </body>
+</html>

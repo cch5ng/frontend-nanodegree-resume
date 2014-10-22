@@ -223,13 +223,13 @@ education.displayOnlineClasses = function() {
 	$('#education').append(HTMLonlineClasses);
 	for (course in education.onlineClasses) {
 		$('#education').append(HTMLschoolStart);
-		var formattedOnlineClassTitle = HTMLonlineTitle.replace(["%data%"], education.onlineClasses[course].title);
+		var formattedOnlineClassTitle = HTMLonlineTitle.replace(["%data%"], education.onlineClasses[course].title).replace(["%classUrl%"], education.onlineClasses[course].url);
 		var formattedOnlineClassSchool = HTMLonlineSchool.replace(["%data%"], education.onlineClasses[course].school);
 		var formattedOnlineClassDates = HTMLonlineDates.replace(["%data%"], education.onlineClasses[course].dates);
-		var formattedOnlineClassURL = HTMLonlineURL.replace(["%data%"], education.onlineClasses[course].url);
+		//var formattedOnlineClassURL = HTMLonlineURL.replace(["%data%"], education.onlineClasses[course].url);
 		$('.education-entry:last').append(formattedOnlineClassTitle + formattedOnlineClassSchool);
 		$('.education-entry:last').append(formattedOnlineClassDates);
-		$('.education-entry:last').append(formattedOnlineClassURL);
+		//$('.education-entry:last').append(formattedOnlineClassURL);
 
 	}
 }

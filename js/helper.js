@@ -27,34 +27,34 @@ var HTMLlocation = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><s
 var HTMLbioPic = "<img src='%data%' class='biopic'>";
 var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
 
-var HTMLskillsStart = "<h3 id='skillsH3'>Skills at a Glance</h3><ul id='skills'></ul>";
-var HTMLskills = "<li class='col-xs-6 col-sm-3 col-md-2 push-left'><span class='skill blue-violet-text'>%data%</span></li>";
+var HTMLskillsStart = "<h2 id='skillsH3'>Skills at a Glance</h2><ul id='skills'></ul>";
+var HTMLskills = "<li class='col-xs-4 col-sm-3 col-md-2 push-left'><span class='skill blue-violet-text'>%data%</span></li>";
 
 var HTMLworkStart = "<div class='work-entry'></div>";
-var HTMLworkEmployer = "<a href='#'>%data%";
-var HTMLworkTitle = " - %data%</a>";
+var HTMLworkEmployer = "<h4>%data%";
+var HTMLworkTitle = " - %data%</h4>";
 var HTMLworkDates = "<div class='date-text'>%data%</div>";
 var HTMLworkLocation = "<div class='location-text'>%data%</div>";
 var HTMLworkDescription = "<p><br>%data%</p>";
 
 var HTMLprojectStart = "<div class='project-entry'></div>";
-var HTMLprojectTitle = "<a href='#'>%data%</a>";
+var HTMLprojectTitle = "<a href='#' target='_blank'>%data%</a>";
 var HTMLprojectDates = "<div class='date-text'>%data%</div>";
 var HTMLprojectDescription = "<p><br>%data%</p>";
 var HTMLprojectImage = "<img src='%data%'>";
 
 var HTMLschoolStart = "<div class='education-entry'></div>";
-var HTMLschoolName = "<a href='#'>%data%";
-var HTMLschoolDegree = " -- %data%</a>";
+var HTMLschoolName = "<h4>%data%";
+var HTMLschoolDegree = " -- %data%</h4>";
 var HTMLschoolDates = "<div class='date-text'>%data%</div>";
 var HTMLschoolMajor = "<em><br>Major: %data%</em>"
 var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
 
-var HTMLonlineClasses = "<h3 class='blue-violet-text'>Online Classes</h3>";
-var HTMLonlineTitle = "<a href='#'>%data%";
+var HTMLonlineClasses = "<h3 id='onlineClasses' class='blue-violet-text'>Online Classes</h3>";
+var HTMLonlineTitle = "<a href='%classUrl%' target='_blank'>%data%";
 var HTMLonlineSchool = " - %data%</a>";
-var HTMLonlineDates = "<div class='date-text'>%data%</div>";
-var HTMLonlineURL = "<br><a href='#'>%data%</a>";
+var HTMLonlineDates = "<div class='date-text'>%data%</div><br/>";
+var HTMLonlineURL = "<a href='#' class='online-class'>%data%</a>";
 
 var HTMLskillChartTable = "<div><table class='skills-row'></table></div>";
 var HTMLskillChartRow = "<tr class='skills-entry'></tr>";
