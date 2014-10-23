@@ -13,16 +13,15 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = "<h1 id='name'>%data%</h1>";
-var HTMLheaderRole = "<span>%data%</span><hr/>";
+var HTMLheaderRole = "<span>%data% - %location%</span><hr/>";
 
 var HTMLcontactGeneric = "<li class='flex-item'><span class='blue-violet-text'>%contact%</span><span class=''>%data%</span></li>";
 var HTMLmobile = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>mobile</span><span class=''>%data%</span></li>";
 var HTMLemail = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>email</span><span class=''>%data%</span></li>";
 var HTMLtwitter = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>twitter</span><span class=''>%data%</span></li>";
 var HTMLgithub = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>github</span><span class=''>%data%</span></li>";
-var HTMLblog = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>blog</span><span class=''>%data%</span></li>";
 var HTMLlocation = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>location</span><span class=''>%data%</span></li>";
-
+//var HTMLblog = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'><a href='%url'>blog</a></span></li>";
 
 var HTMLbioPic = "<img src='%data%' class='biopic'>";
 var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";

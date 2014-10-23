@@ -10,8 +10,10 @@ var bio = {
 		"mobile" : "323.325.1553",
 		"email" : "cch5ng@gmail.com",
 		"github" : "cch5ng",
-		"twitter" : "cch5ng",
-		"location" : "Los Angeles, CA"
+		"twitter" : "@cch5ng",
+		"location" : "Los Angeles, CA",
+		"blog" : "carrottech",
+		"blogUrl" : "http://carrottech.wordpress.com"
 	},
 	"picUrl" : "images/bear_temp.gif",
 	"welcomeMsg" : "Namaste - Honor the spirit in you",
@@ -20,31 +22,28 @@ var bio = {
 
 bio.displayBio = function() {
 	var formattedName = HTMLheaderName.replace(["%data%"],bio.name);
-	var formattedRole = HTMLheaderRole.replace(["%data%"],bio.role);
-	var formattedLocation = HTMLlocation.replace(["%data%"],bio.contacts.location);
+	var formattedRole = HTMLheaderRole.replace(["%data%"],bio.role).replace(["%location%"],bio.contacts.location);
+//	var formattedLocation = HTMLlocation.replace(["%data%"],bio.contacts.location);
 	var formattedEmail = HTMLemail.replace(["%data%"], bio.contacts.email);
 	var formattedMobile = HTMLmobile.replace(["%data%"], bio.contacts.mobile);
 	var formattedGithub = HTMLgithub.replace(["%data%"], bio.contacts.github);
-	//commenting out to reduce clutter
-	//var formattedTwitter = HTMLtwitter.replace(["%data%"], bio.contacts.twitter);
-	//var formattedBioPic = HTMLbioPic.replace(["%data%"], bio.picUrl);
-	//var formattedWelcomeMsg = HTMLWelcomeMsg.replace(["%data%"], bio.welcomeMsg);
+	var formattedTwitter = HTMLtwitter.replace(["%data%"], bio.contacts.twitter);
+//	var formattedBlog = HTMLblog.replace(["%url%"], bio.contacts.blogUrl);
 
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
-	$("#topContacts").append(formattedLocation);
+//	$("#topContacts").append(formattedLocation);
 	$("#topContacts").append(formattedEmail);
 	$("#topContacts").append(formattedMobile);
 	$("#topContacts").append(formattedGithub);
-	$("#footerContacts").append(formattedLocation);
+	$("#topContacts").append(formattedTwitter);
+//	$("#topContacts").append(formattedBlog);
+//	$("#footerContacts").append(formattedLocation);
 	$("#footerContacts").append(formattedEmail);
 	$("#footerContacts").append(formattedMobile);
 	$("#footerContacts").append(formattedGithub);
-
-
-	//$("#topContacts").append(formattedTwitter);
-	//$("#header").prepend(formattedWelcomeMsg);
-	//$("#header").prepend(formattedBioPic);
+	$("#footerContacts").append(formattedTwitter);
+//	$("#footerContacts").append(formattedBlog);
 
 }
 

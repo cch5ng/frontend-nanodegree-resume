@@ -354,12 +354,6 @@ div.gm-style-iw > div > div {
   #letsConnect {
     margin-top: 10%;
   }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
 
   ul, #skillsH3, h2, h3 {
     text-align: center;
@@ -374,8 +368,8 @@ div.gm-style-iw > div > div {
   }
 
   #header {
-    padding-top: 20px;
-    height: 385px;
+    padding-top: 0;
+    height: 370px;
     text-align: center;
   }
 
