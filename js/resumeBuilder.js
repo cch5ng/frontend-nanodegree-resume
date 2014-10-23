@@ -197,28 +197,28 @@ var education = {
 //note - hardcoded schools[0] even though there is only one array item; otherwise google maps display would break
 education.displaySchool = function() {
 	for (var item in education.schools[0].degree) {
-		$('#education').append(HTMLschoolStart);
+		$("#education").append(HTMLschoolStart);
 		var formattedSchoolName = HTMLschoolName.replace(["%data%"], education.schools[0].name);
 		var formattedSchoolDegree = HTMLschoolDegree.replace(["%data%"], education.schools[0].degree[item]);
 		var formattedSchoolMajor  = HTMLschoolMajor.replace(["%data%"], education.schools[0].major[item]);
 		var formattedSchoolDates = HTMLschoolDates.replace(["%data%"], education.schools[0].dates);
 		var formattedSchoolLocation = HTMLschoolLocation.replace(["%data%"], education.schools[0].location);
-		$('.education-entry:last').append(formattedSchoolName + formattedSchoolDegree);
-		$('.education-entry:last').append(formattedSchoolDates);
-		$('.education-entry:last').append(formattedSchoolLocation);
-		$('.education-entry:last').append(formattedSchoolMajor);
+		$(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
+		$(".education-entry:last").append(formattedSchoolDates);
+		$(".education-entry:last").append(formattedSchoolLocation);
+		$(".education-entry:last").append(formattedSchoolMajor);
 	}		
 };
 
 education.displayOnlineClasses = function() {
-	$('#education').append(HTMLonlineClasses);
+	$("#education").append(HTMLonlineClasses);
 	for (var course in education.onlineClasses) {
-		$('#education').append(HTMLschoolStart);
+		$("#education").append(HTMLschoolStart);
 		var formattedOnlineClassTitle = HTMLonlineTitle.replace(["%data%"], education.onlineClasses[course].title).replace(["%classUrl%"], education.onlineClasses[course].url);
 		var formattedOnlineClassSchool = HTMLonlineSchool.replace(["%data%"], education.onlineClasses[course].school);
 		var formattedOnlineClassDates = HTMLonlineDates.replace(["%data%"], education.onlineClasses[course].dates);
-		$('.education-entry:last').append(formattedOnlineClassTitle + formattedOnlineClassSchool);
-		$('.education-entry:last').append(formattedOnlineClassDates);
+		$(".education-entry:last").append(formattedOnlineClassTitle + formattedOnlineClassSchool);
+		$(".education-entry:last").append(formattedOnlineClassDates);
 	}
 };
 

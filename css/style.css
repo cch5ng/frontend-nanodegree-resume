@@ -1,8 +1,11 @@
-*{
-    padding:0;
-    margin:0;
-    font-family: 'Halant', serif;
-    font-size: 16.5px;
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: 'Halant', serif;
+  font-size: 16.5px;
 }
 
 .education-entry, .work-entry, .project-entry {
@@ -10,7 +13,7 @@
   padding-right: 5%;
 }
 
-#header {
+.header {
   padding-top: 30px;
   height: 280px;
   background-color: #ededed;
@@ -21,13 +24,24 @@
 }
 
 h1 {
-  font-family: 'Rozha One', serif;
-  font-size: 40px;
-  color: #3300cc;
-  line-height: 48px;
   padding:10px;
   padding-left: 5%;
   display: inline;
+  color: #3300cc;
+  font-family: 'Rozha One', serif;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
+  margin: 0;
+  padding-top:15px;
+  padding-right: 5%;
+  padding-bottom: 5px;
+  padding-left: 5%;
+  color: #3300cc;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 h3 {
@@ -39,31 +53,19 @@ h3 {
   line-height: 26px;
 }
 
-h2, h5 {
-  padding-top:15px;
-  padding-right:10px;
-  padding-bottom:10px;
-  padding-left: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-h2 {
-  margin: 0;
-  padding-bottom: 5px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #3300cc;
-  line-height: 29px;
-}
-
 h4 {
   margin-top: 15px;
   margin-bottom: 3px;
   line-height: 20px;
   color: #4A4A4A;
   font-weight: 400;
-/*  font-style: bold; */
+}
+
+h5 {
+  padding-top:15px;
+  padding-right: 5%;
+  padding-bottom:10px;
+  padding-left: 5%;
 }
 
 table {
@@ -84,7 +86,7 @@ tr, th, td {
   border: 1px solid white;
 }
 
-#workExperience {
+.workExperience {
   clear: both;
 }
 
@@ -97,11 +99,10 @@ tr, th, td {
 }
 
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  /*line-height: 14px;*/
   float: left;
+  color: #999999;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .location-text {
@@ -113,24 +114,24 @@ tr, th, td {
 }
 
 p {
-  font-size: 15px;
   color: #333333;
+  font-size: 15px;
   line-height: 21px;
 }
 
 a {
-  color: #1199C3;
-  text-decoration: none;
   margin-top: 10px;
   display: block;
+  color: #1199C3;
+  text-decoration: none;
 }
 
-a.online-class {
+.online-class {
   margin-top: 0;
   font-size: 15px;
 }
 
-a.nav-menu {
+.nav-menu {
   margin-top: 0;
 }
 
@@ -138,27 +139,21 @@ a.nav-menu {
   color: #20bf9f;
   font-weight: 500;
   font-size: 18px;
-/*  color: #068481;*/
 }
 
 .welcome-message {
+  color: #ffff00;
   font-weight: 500;
   font-size: 24px;
-  color: #ffff00;
   line-height: 30px;
 }
 
-#skillsH3 {
+.skillsH3 {
   color: #ff3300;
-  /*display: none;*/
 }
 
 .skill {
   font-size: 18px;
-}
-
-.orange {
-  background-color: #F5AE23;
 }
 
 .blue-violet-text {
@@ -167,14 +162,6 @@ a.nav-menu {
 
 .red-orange-text {
   color: #ff3300;
-}
-
-.orange-text {
-  color: #ff9900;
-}
-
-.yellow-text {
-  color: #ffff00;
 }
 
 .white-text {
@@ -213,11 +200,11 @@ ul {
   padding-left: 5%;
 }
 
-ul#topContacts {
+#topContacts {
   padding-top: 0;
 }
 
-ul#footerContacts {
+#footerContacts {
   padding-bottom: 40px;
 }
 
@@ -270,6 +257,10 @@ span {
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 0;
+}
+
+.role {
+  padding-right: 0;
 }
 
 #letsConnect {
@@ -355,7 +346,7 @@ div.gm-style-iw > div > div {
     margin-top: 10%;
   }
 
-  ul, #skillsH3, h2, h3 {
+  ul, .skillsH3, h2, h3 {
     text-align: center;
   }
 
@@ -367,7 +358,7 @@ div.gm-style-iw > div > div {
     padding-top: 75px;
   }
 
-  #header {
+  .header {
     padding-top: 0;
     height: 370px;
     text-align: center;
