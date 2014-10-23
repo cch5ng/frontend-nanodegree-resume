@@ -38,7 +38,7 @@ var HTMLworkLocation = "<div class='location-text'>%data%</div>";
 var HTMLworkDescription = "<p><br>%data%</p>";
 
 var HTMLprojectStart = "<div class='project-entry'></div>";
-var HTMLprojectTitle = "<a href='%url%' target='_blank'>%data%</a>";
+var HTMLprojectTitle = "<a href='%url%' class='important_link' target='_blank'>%data%</a>";
 var HTMLprojectDates = "<div class='date-text'>%data%</div>";
 var HTMLprojectDescription = "<p><br>%data%</p>";
 var HTMLprojectImage = "<img src='%data%'>";
@@ -51,7 +51,7 @@ var HTMLschoolMajor = "<em><br>Major: %data%</em>"
 var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
 
 var HTMLonlineClasses = "<h3 id='onlineClasses' class='blue-violet-text'>Online Classes</h3>";
-var HTMLonlineTitle = "<a href='%classUrl%' target='_blank'>%data%";
+var HTMLonlineTitle = "<a href='%classUrl%' class='important_link' target='_blank'>%data%";
 var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div><br/>";
 var HTMLonlineURL = "<a href='#' class='online-class'>%data%</a>";

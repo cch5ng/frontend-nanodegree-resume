@@ -134,6 +134,13 @@ a.nav-menu {
   margin-top: 0;
 }
 
+.important_link {
+  color: #20bf9f;
+  font-weight: 500;
+  font-size: 18px;
+/*  color: #068481;*/
+}
+
 .welcome-message {
   font-weight: 500;
   font-size: 24px;
