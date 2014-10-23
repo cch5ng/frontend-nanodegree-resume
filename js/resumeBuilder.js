@@ -1,7 +1,3 @@
-
-//Note that the main job title comes from the work object
-//TODO - need to fix contact footer; what should it do?
-
 //bio.skills displays better when limited to 6 items
 var bio = {
 	"name" : "Carol Chung",
@@ -23,39 +19,32 @@ var bio = {
 bio.displayBio = function() {
 	var formattedName = HTMLheaderName.replace(["%data%"],bio.name);
 	var formattedRole = HTMLheaderRole.replace(["%data%"],bio.role).replace(["%location%"],bio.contacts.location);
-//	var formattedLocation = HTMLlocation.replace(["%data%"],bio.contacts.location);
 	var formattedEmail = HTMLemail.replace(["%data%"], bio.contacts.email);
 	var formattedMobile = HTMLmobile.replace(["%data%"], bio.contacts.mobile);
 	var formattedGithub = HTMLgithub.replace(["%data%"], bio.contacts.github);
 	var formattedTwitter = HTMLtwitter.replace(["%data%"], bio.contacts.twitter);
-//	var formattedBlog = HTMLblog.replace(["%url%"], bio.contacts.blogUrl);
 
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
-//	$("#topContacts").append(formattedLocation);
 	$("#topContacts").append(formattedEmail);
 	$("#topContacts").append(formattedMobile);
 	$("#topContacts").append(formattedGithub);
 	$("#topContacts").append(formattedTwitter);
-//	$("#topContacts").append(formattedBlog);
-//	$("#footerContacts").append(formattedLocation);
 	$("#footerContacts").append(formattedEmail);
 	$("#footerContacts").append(formattedMobile);
 	$("#footerContacts").append(formattedGithub);
 	$("#footerContacts").append(formattedTwitter);
-//	$("#footerContacts").append(formattedBlog);
-
-}
+};
 
 bio.displaySkills = function() {
 	if (bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
-		for (skill in bio.skills) {
+		for (var skill in bio.skills) {
 			var formattedSkills = HTMLskills.replace(["%data%"], bio.skills[skill]);
 			$("#skills").append(formattedSkills);			
 		}
 	}
-}
+};
 
 bio.displayBio();
 bio.displaySkills();
@@ -96,24 +85,22 @@ var work = {
 };
 
 work.displayWork = function() {
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 		var formattedEmployer = HTMLworkEmployer.replace(["%data%"], work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace(["%data%"], work.jobs[job].title);
-		var formattedDates = HTMLworkDates.replace(["%data%"], work.jobs[job].dates)
-		var formattedDescriptions = HTMLworkDescription.replace(["%data%"], work.jobs[job].description)
+		var formattedDates = HTMLworkDates.replace(["%data%"], work.jobs[job].dates);
+		var formattedDescriptions = HTMLworkDescription.replace(["%data%"], work.jobs[job].description);
 
 		$("#main").append(work["currentTitle"]); 
 		$(".work-entry:last").append(formattedEmployer + formattedTitle);
 		$(".work-entry:last").append(formattedDates);
 		$(".work-entry:last").append(formattedDescriptions);
 	}
-}
+};
 
 work.displayWork();
 
-//TODO - add logic for displaying images but comment it out b/c it looks too cluttered
-//			 preface image display with if condition for images exist; i.e. length > 0
 var project = {
 	"projects" : [
 						{	"title" : "Team Lottery Application",
@@ -130,7 +117,7 @@ var project = {
 };
 
 project.displayProject = function() {
-	for (proj in project.projects) {
+	for (var proj in project.projects) {
 		$("#projects").append(HTMLprojectStart);
 		var formattedTitle = HTMLprojectTitle.replace(["%data%"], project.projects[proj].title).replace(["%url%"], project.projects[proj].url);
 		var formattedDates = HTMLprojectDates.replace(["%data%"], project.projects[proj].dates);
@@ -139,7 +126,7 @@ project.displayProject = function() {
 		$(".project-entry:last").append(formattedDates);
 		$(".project-entry:last").append(formattedDescription);
 	}
-}
+};
 
 project.displayProject();
 
@@ -209,7 +196,7 @@ var education = {
 
 //note - hardcoded schools[0] even though there is only one array item; otherwise google maps display would break
 education.displaySchool = function() {
-	for (item in education.schools[0].degree) {
+	for (var item in education.schools[0].degree) {
 		$('#education').append(HTMLschoolStart);
 		var formattedSchoolName = HTMLschoolName.replace(["%data%"], education.schools[0].name);
 		var formattedSchoolDegree = HTMLschoolDegree.replace(["%data%"], education.schools[0].degree[item]);
@@ -221,11 +208,11 @@ education.displaySchool = function() {
 		$('.education-entry:last').append(formattedSchoolLocation);
 		$('.education-entry:last').append(formattedSchoolMajor);
 	}		
-}
+};
 
 education.displayOnlineClasses = function() {
 	$('#education').append(HTMLonlineClasses);
-	for (course in education.onlineClasses) {
+	for (var course in education.onlineClasses) {
 		$('#education').append(HTMLschoolStart);
 		var formattedOnlineClassTitle = HTMLonlineTitle.replace(["%data%"], education.onlineClasses[course].title).replace(["%classUrl%"], education.onlineClasses[course].url);
 		var formattedOnlineClassSchool = HTMLonlineSchool.replace(["%data%"], education.onlineClasses[course].school);
@@ -233,7 +220,7 @@ education.displayOnlineClasses = function() {
 		$('.education-entry:last').append(formattedOnlineClassTitle + formattedOnlineClassSchool);
 		$('.education-entry:last').append(formattedOnlineClassDates);
 	}
-}
+};
 
 education.displaySchool();
 education.displayOnlineClasses();
@@ -307,7 +294,7 @@ skillsChart.displaySkills = function() {
 	$("#skillsChart").append(HTMLskillChartTable);
 	$(".skills-row").append(HTMLskillChartRow);
 	$(".skills-entry:last").append(HTMLskillChartHeadings);
-	for (skill in skillsChart.skills) {
+	for (var skill in skillsChart.skills) {
 		$(".skills-row").append(HTMLskillChartRow);
 		var formattedSkillsName = HTMLskillChartName.replace(["%data%"], skillsChart.skills[skill].name);
 		var formattedSkillsLevel = HTMLskillChartLevel.replace(["%data%"], skillsChart.skills[skill].level);
@@ -318,7 +305,7 @@ skillsChart.displaySkills = function() {
 		$(".skills-entry:last").append(formattedSkillsDates);
 		$(".skills-entry:last").append(formattedSkillsFrequency);
 	}
-}
+};
 
 skillsChart.displaySkills();
 

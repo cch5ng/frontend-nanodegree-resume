@@ -21,8 +21,6 @@ var HTMLemail = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span
 var HTMLtwitter = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>twitter</span><span class=''>%data%</span></li>";
 var HTMLgithub = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>github</span><span class=''>%data%</span></li>";
 var HTMLlocation = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>location</span><span class=''>%data%</span></li>";
-//var HTMLblog = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'><a href='%url'>blog</a></span></li>";
-
 var HTMLbioPic = "<img src='%data%' class='biopic'>";
 var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
 
@@ -46,7 +44,7 @@ var HTMLschoolStart = "<div class='education-entry'></div>";
 var HTMLschoolName = "<h4>%data%";
 var HTMLschoolDegree = " -- %data%</h4>";
 var HTMLschoolDates = "<div class='date-text'>%data%</div>";
-var HTMLschoolMajor = "<em><br>Major: %data%</em>"
+var HTMLschoolMajor = "<em><br>Major: %data%</em>";
 var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
 
 var HTMLonlineClasses = "<h3 id='onlineClasses' class='blue-violet-text'>Online Classes</h3>";
@@ -57,7 +55,7 @@ var HTMLonlineURL = "<a href='#' class='online-class'>%data%</a>";
 
 var HTMLskillChartTable = "<div><table class='skills-row table table-condensed table-responsive'></table></div>";
 var HTMLskillChartRow = "<tr class='skills-entry'></tr>";
-var HTMLskillChartHeadings = "<th class='dark-row'>Name</th> <th class='dark-row'>Level</th> <th class='dark-row'>Dates</th> <th class='dark-row'>Frequency</th>"
+var HTMLskillChartHeadings = "<th class='dark-row'>Name</th> <th class='dark-row'>Level</th> <th class='dark-row'>Dates</th> <th class='dark-row'>Frequency</th>";
 var HTMLskillChartName = "<td class='light-row skill-chart-name'>%data%</td>";
 var HTMLskillChartLevel = "<td class='light-row skill-chart-level'>%data%</td>";
 var HTMLskillChartDates = "<td class='light-row skill-chart-dates'>%data%</td>";
@@ -65,40 +63,6 @@ var HTMLskillChartFrequency = "<td class='light-row skill-chart-freq'>%data%</td
 
 var internationalizeButton = "<button>Internationalize</button>";
 var googleMap = "<div id='map'></div>";
-
-
-/*
-The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
-$(document).ready(function() {
-  $('button').click(function() {
-    var iName = inName() || function(){};
-    $('#name').html(iName);  
-  });
-})
-
-
-
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
-*/
-clickLocations = [];
-
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      "x": x,
-      "y": y
-    }
-  );
-  console.log("x location: " + x + "; y location: " + y);
-}
-
-$(document).click(function(loc) {
-  // your code goes here!
-});
-
-
 
 /*
 This is the fun part. Here's where we generate the custom Google Map for the website.
