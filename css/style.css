@@ -44,28 +44,12 @@ h2 {
   line-height: 29px;
 }
 
-h3 {
-  padding-top: 20px;
-  padding-left: 5%;
-  font-weight: 500;
-  font-size: 24px;
-  color: #000000;
-  line-height: 26px;
-}
-
 h4 {
   margin-top: 15px;
   margin-bottom: 3px;
   line-height: 20px;
   color: #4A4A4A;
   font-weight: 400;
-}
-
-h5 {
-  padding-top:15px;
-  padding-right: 5%;
-  padding-bottom:10px;
-  padding-left: 5%;
 }
 
 table {
@@ -76,6 +60,7 @@ table {
   border-spacing: 0;
 }
 
+/* overwriting bootstrap */
 .table {
   width: 90%;
   max-width: 90%;
@@ -98,25 +83,30 @@ tr, th, td {
   background-color: #e6e6fa;
 }
 
+.xsm-text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sm-text {
+  font-size: 15px;
+  line-height: 21px;
+}
+
 .date-text {
   float: left;
   color: #999999;
-  font-size: 14px;
   font-style: italic;
 }
 
 .location-text {
   font-style: italic;
-  font-size: 14px;
   color: #999999;
-  line-height: 16px;
   float: right;
 }
 
 p {
   color: #333333;
-  font-size: 15px;
-  line-height: 21px;
 }
 
 a {
@@ -146,10 +136,6 @@ a {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-}
-
-.skillsH3 {
-  color: #ff3300;
 }
 
 .skill {
@@ -193,6 +179,10 @@ a {
   padding-bottom: 1%;
 }
 
+.center-text {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding-top: 20px;
@@ -200,11 +190,11 @@ ul {
   padding-left: 5%;
 }
 
-#topContacts {
+.topContacts {
   padding-top: 0;
 }
 
-#footerContacts {
+.footerContacts {
   padding-bottom: 40px;
 }
 
@@ -212,7 +202,7 @@ ul.nav {
   padding-right: 3.5%;
 }
 
-#skills {
+.skills {
   padding-top: 10px;
 }
 
@@ -223,17 +213,6 @@ li {
 
 .push-left {
   padding-left: 0;
-}
-
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-}
-
-img {
-  padding: 10px;
 }
 
 br {
@@ -263,18 +242,18 @@ span {
   padding-right: 0;
 }
 
-#letsConnect {
+.letsConnect {
   text-align: center;
 }
 
-#map {
+.map {
   display: block;
   height: 100%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-#mapDiv {
+.mapDiv {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
@@ -284,7 +263,7 @@ div.gm-style-iw > div > div {
   font-weight: bold;
 }
 
-#navigation {
+.navigation {
   height: 70px;
 }
 
@@ -312,22 +291,12 @@ div.gm-style-iw > div > div {
 }
 
 @media only screen and (max-width: 1024px) {
-  #letsConnect {
+  .letsConnect {
     margin-top: 5%;
   }
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-
 @media only screen and (min-width: 768px) {
-  .biopic {
-    display: block;
-  }
 
 /* overwriting bootstrap.min.css*/
   .navbar-nav>li>a {
@@ -338,15 +307,14 @@ div.gm-style-iw > div > div {
   .navbar {
     border-radius: 0;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
-  #letsConnect {
+  .letsConnect {
     margin-top: 10%;
   }
 
-  ul, .skillsH3, h2, h3 {
+  ul, .skillsH3, h2{
     text-align: center;
   }
 
@@ -354,7 +322,7 @@ div.gm-style-iw > div > div {
     padding-top: 10px;
   }
 
-  #skillsH3 {
+  .skillsH3 {
     padding-top: 75px;
   }
 
@@ -378,9 +346,9 @@ div.gm-style-iw > div > div {
     max-width: 94%;
   }
 
-  ul#footerContacts {
+  .footerContacts {
     padding-bottom: 40px;
     height: 125px;
+    text-align: center;
   }
-
 }

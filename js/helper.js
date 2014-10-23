@@ -1,17 +1,3 @@
-/*
-
-This file contains all of the code running in the background that makes resumeBuilder.js possible. We call these helper functions because they support your code in this course.
-
-Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
-
-Cameron Pittman
-*/
-
-
-/*
-These are HTML strings. As part of the course, you'll be using JavaScript functions
-replace the %data% placeholder text you see in them.
-*/
 var HTMLheaderName = "<h1 id='name'>%data%</h1>";
 var HTMLheaderRole = "<span class='role'>%data% - %location%</span><hr/>";
 
@@ -21,36 +7,34 @@ var HTMLemail = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span
 var HTMLtwitter = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>twitter</span><span class=''>%data%</span></li>";
 var HTMLgithub = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>github</span><span class=''>%data%</span></li>";
 var HTMLlocation = "<li class='contact col-xs-12 col-sm-4 col-md-3 push-left'><span class='blue-violet-text'>location</span><span class=''>%data%</span></li>";
-var HTMLbioPic = "<img src='%data%' class='biopic'>";
-var HTMLWelcomeMsg = "<span class='welcome-message'>%data%</span>";
 
-var HTMLskillsStart = "<h2 id='skillsH3' class='skillsH3'>Skills at a Glance</h2><ul id='skills'></ul>";
+var HTMLskillsStart = "<h2 id='skillsH3' class='skillsH3 red-orange-text'>Skills at a Glance</h2><ul id='skills' class='skills'></ul>";
 var HTMLskills = "<li class='col-xs-4 col-sm-3 col-md-2 push-left'><span class='skill blue-violet-text'>%data%</span></li>";
 
 var HTMLworkStart = "<div class='work-entry'></div>";
 var HTMLworkEmployer = "<h4>%data%";
 var HTMLworkTitle = " - %data%</h4>";
-var HTMLworkDates = "<div class='date-text'>%data%</div>";
-var HTMLworkLocation = "<div class='location-text'>%data%</div>";
-var HTMLworkDescription = "<p><br>%data%</p>";
+var HTMLworkDates = "<div class='date-text xsm-text'>%data%</div>";
+var HTMLworkLocation = "<div class='location-text xsm-text'>%data%</div>";
+var HTMLworkDescription = "<p class='sm-text'><br>%data%</p>";
 
 var HTMLprojectStart = "<div class='project-entry'></div>";
 var HTMLprojectTitle = "<a href='%url%' class='important_link' target='_blank'>%data%</a>";
-var HTMLprojectDates = "<div class='date-text'>%data%</div>";
-var HTMLprojectDescription = "<p><br>%data%</p>";
+var HTMLprojectDates = "<div class='date-text xsm-text'>%data%</div>";
+var HTMLprojectDescription = "<p class='sm-text'><br>%data%</p>";
 var HTMLprojectImage = "<img src='%data%'>";
 
 var HTMLschoolStart = "<div class='education-entry'></div>";
 var HTMLschoolName = "<h4>%data%";
 var HTMLschoolDegree = " -- %data%</h4>";
-var HTMLschoolDates = "<div class='date-text'>%data%</div>";
+var HTMLschoolDates = "<div class='date-text xsm-text'>%data%</div>";
 var HTMLschoolMajor = "<em><br>Major: %data%</em>";
-var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
+var HTMLschoolLocation = "<div class='location-text xsm-text'>%data%</div>";
 
-var HTMLonlineClasses = "<h3 id='onlineClasses' class='blue-violet-text'>Online Classes</h3>";
+var HTMLonlineClasses = "<h2 id='onlineClasses' class='blue-violet-text'>Online Classes</h2>";
 var HTMLonlineTitle = "<a href='%classUrl%' class='important_link' target='_blank'>%data%";
 var HTMLonlineSchool = " - %data%</a>";
-var HTMLonlineDates = "<div class='date-text'>%data%</div><br/>";
+var HTMLonlineDates = "<div class='date-text xsm-text'>%data%</div><br/>";
 var HTMLonlineURL = "<a href='#' class='online-class'>%data%</a>";
 
 var HTMLskillChartTable = "<div><table class='skills-row table table-condensed table-responsive'></table></div>";
@@ -62,7 +46,7 @@ var HTMLskillChartDates = "<td class='light-row skill-chart-dates'>%data%</td>";
 var HTMLskillChartFrequency = "<td class='light-row skill-chart-freq'>%data%</td>";
 
 var internationalizeButton = "<button>Internationalize</button>";
-var googleMap = "<div id='map'></div>";
+var googleMap = "<div id='map' class='map'></div>";
 
 /*
 This is the fun part. Here's where we generate the custom Google Map for the website.
@@ -70,8 +54,6 @@ See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
 var map;    // declares a global map variable
-
-
 /*
 Start here! initializeMap() is called when page is loaded.
 */
@@ -212,6 +194,6 @@ window.addEventListener('load', initializeMap);
 // Vanilla JS way to listen for resizing of the window 
 // and adjust map bounds
 window.addEventListener('resize', function(e) {
-  // Make sure the map bounds get updated on page resize
+// Make sure the map bounds get updated on page resize
   map.fitBounds(mapBounds);
 });
