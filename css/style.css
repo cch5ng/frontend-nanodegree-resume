@@ -109,11 +109,15 @@ p {
   color: #333333;
 }
 
-a {
+a:link, a:visited {
   margin-top: 10px;
   display: block;
-  color: #1199C3;
   text-decoration: none;
+}
+
+a:active, a:hover {
+  color: #36DBCA;
+  text-decoration: underline;
 }
 
 .online-class {
@@ -126,7 +130,6 @@ a {
 }
 
 .important_link {
-  color: #20bf9f;
   font-weight: 500;
   font-size: 18px;
 }
@@ -144,6 +147,14 @@ a {
 
 .blue-violet-text {
   color: #3300cc;
+}
+
+.green-text {
+  color: #28AE7B;
+}
+
+.blue-green-text {
+  color: #20B2AA;
 }
 
 .red-orange-text {
@@ -263,15 +274,20 @@ div.gm-style-iw > div > div {
   font-weight: bold;
 }
 
-.navigation {
-  height: 70px;
-}
 
 .transparent {
   opacity: 0.9;
 }
 
+/*
+.navigation {
+  height: 70px;
+}
+*/
+
 /* overwriting bootstrap.min.css */
+
+/*
 .navbar {
   margin-bottom: 0;
   height: 70px;
@@ -283,12 +299,15 @@ div.gm-style-iw > div > div {
   padding-bottom: 5px;
   line-height: 15px;
 }
+*/
 
+/*
 .nav>li>a {
   position: relative;
   display: block;
   padding: 5px 10px;
 }
+*/
 
 @media only screen and (max-width: 1024px) {
   .letsConnect {
