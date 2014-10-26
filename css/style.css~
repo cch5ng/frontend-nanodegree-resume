@@ -1,0 +1,364 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: 'Halant', serif;
+  font-size: 16.5px;
+}
+
+.education-entry, .work-entry, .project-entry {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.header {
+  padding-top: 30px;
+  height: 280px;
+  background-color: #ededed;
+}
+
+.checkerboard {
+  background-image: url(../images/vichy.png);
+}
+
+h1 {
+  padding:10px;
+  padding-left: 5%;
+  display: inline;
+  color: #3300cc;
+  font-family: 'Rozha One', serif;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
+  margin: 0;
+  padding-top:15px;
+  padding-right: 5%;
+  padding-bottom: 5px;
+  padding-left: 5%;
+  color: #3300cc;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h4 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+  line-height: 20px;
+  color: #4A4A4A;
+  font-weight: 400;
+}
+
+table {
+  margin:10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid white;
+  border-spacing: 0;
+}
+
+/* overwriting bootstrap */
+.table {
+  width: 90%;
+  max-width: 90%;
+}
+
+tr, th, td {
+  padding: 6px;
+  border: 1px solid white;
+}
+
+.workExperience {
+  clear: both;
+}
+
+.dark-row {
+  background-color: #aaaaff;
+}
+
+.light-row {
+  background-color: #e6e6fa;
+}
+
+.xsm-text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.sm-text {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.date-text {
+  float: left;
+  color: #999999;
+  font-style: italic;
+}
+
+.location-text {
+  font-style: italic;
+  color: #999999;
+  float: right;
+}
+
+p {
+  color: #333333;
+}
+
+a {
+  margin-top: 10px;
+  display: block;
+  color: #1199C3;
+  text-decoration: none;
+}
+
+.online-class {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.nav-menu {
+  margin-top: 0;
+}
+
+.important_link {
+  color: #20bf9f;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.welcome-message {
+  color: #ffff00;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.skill {
+  font-size: 18px;
+}
+
+.blue-violet-text {
+  color: #3300cc;
+}
+
+.red-orange-text {
+  color: #ff3300;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.gray {
+  background-color: #F3F3F3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #4A4A4A;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.center-content {
+  margin: 0 auto;
+  padding-bottom: 1%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+}
+
+.topContacts {
+  padding-top: 0;
+}
+
+.footerContacts {
+  padding-bottom: 55px;
+}
+
+ul.nav {
+  padding-right: 3.5%;
+}
+
+.skills {
+  padding-top: 10px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.push-left {
+  padding-left: 0;
+}
+
+br {
+  line-height: 1px;
+}
+
+/* Bar chart stuff */
+.chart div {
+  font: 10px sans-serif;
+  background-color: #4A4A4A;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  height: 12px;
+  color: white;
+  display: inline-block;
+}
+
+span {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+
+.role {
+  padding-right: 0;
+}
+
+.letsConnect {
+  text-align: center;
+}
+
+.map {
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+div.gm-style-iw > div > div {
+  font-weight: bold;
+}
+
+.navigation {
+  height: 70px;
+}
+
+.transparent {
+  opacity: 0.9;
+}
+
+/* overwriting bootstrap.min.css */
+.navbar {
+  margin-bottom: 0;
+  height: 70px;
+  border: none;
+}
+
+.navbar-nav>li>a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 15px;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .letsConnect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* overwriting bootstrap.min.css*/
+  .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .navbar {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .letsConnect {
+    margin-top: 10%;
+  }
+
+  ul, .skillsH3, h2{
+    text-align: center;
+  }
+
+  ul {
+    padding-top: 10px;
+  }
+
+  .skillsH3 {
+    padding-top: 75px;
+  }
+
+  .header {
+    padding-top: 0;
+    height: 370px;
+    text-align: center;
+  }
+
+  h1 {
+    display: block;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .table {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    max-width: 94%;
+  }
+
+/* added to fix footer getting pushed up above the map on small devices with high res but it causes too large top border on med devices/lower res small devices */
+  footer {
+    margin-top: 55px;
+  }
+
+  .footerContacts {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .mapDiv {
+    height: 350px;
+    width: 100%;
+    padding-bottom: 10%;
+  }
+}
