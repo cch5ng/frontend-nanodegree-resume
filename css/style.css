@@ -23,8 +23,6 @@ body {
   padding-top: 2%;
   padding-bottom: 5%;
   height: 15%;
-  /*height: 280px;*/
-  background-color: #ededed;
 }
 
 h1 {
@@ -39,15 +37,14 @@ h1 {
 
 h2 {
   margin: 0;
-  padding-top:2%;
-  padding-right: 5%;
+  padding:2% 5%;
   padding-bottom: 5px;
-  padding-left: 5%;
   color: #3300cc;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 26px;
 }
 
+/* h4 overwrites bootstrap */
 h4 {
   margin-top: 15px;
   margin-bottom: 3px;
@@ -57,14 +54,12 @@ h4 {
 }
 
 table {
-  margin:10px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin:2% 5%;
   border: 1px solid white;
   border-spacing: 0;
 }
 
-/* overwriting bootstrap */
+/* .table overwrites bootstrap */
 .table {
   width: 90%;
   max-width: 90%;
@@ -104,9 +99,9 @@ tr, th, td {
 }
 
 .location-text {
-  font-style: italic;
-  color: #999999;
   float: right;
+  color: #999999;
+  font-style: italic;
 }
 
 p {
@@ -278,7 +273,6 @@ div.gm-style-iw > div > div {
   font-weight: bold;
 }
 
-
 .transparent {
   opacity: 0.9;
 }
@@ -291,13 +285,13 @@ div.gm-style-iw > div > div {
 
 /* overwriting bootstrap.min.css */
 
-/*
 .navbar {
   margin-bottom: 0;
-  height: 70px;
+  /*height: 70px;*/
   border: none;
 }
 
+/*
 .navbar-nav>li>a {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -313,33 +307,10 @@ div.gm-style-iw > div > div {
 }
 */
 
-@media only screen and (max-width: 1024px) {
-  .letsConnect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* overwriting bootstrap.min.css*/
-  .navbar-nav>li>a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  .navbar {
-    border-radius: 0;
-  }
-
-  h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
 
 @media only screen and (max-width: 767px) {
   .letsConnect {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   ul, .skillsH3, h2{
@@ -388,5 +359,46 @@ div.gm-style-iw > div > div {
     height: 350px;
     width: 100%;
     padding-bottom: 10%;
+  }
+
+/* overwriting bootstrap */
+  .navbar-toggle {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .letsConnect {
+    margin-top: 5%;
+  }
+
+/* overwriting bootstrap.min.css*/
+  .navbar-nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .navbar {
+    border-radius: 0;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .letsConnect {
+    margin-top: 3%;
   }
 }
