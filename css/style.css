@@ -1,5 +1,11 @@
 /* global styles */
 
+/*
+.skill {
+  font-size: 18px;
+}
+*/
+
 * {
   padding:0;
   margin:0;
@@ -7,7 +13,7 @@
 
 body {
   font-family: 'Halant', serif;
-  font-size: 16.5px;
+  font-size: 1.7em;
 }
 
 .checkerboard {
@@ -31,24 +37,21 @@ h1 {
   display: inline;
   color: #3300cc;
   font-family: 'Rozha One', serif;
-  font-size: 34px;
-  line-height: 38px;
+  font-size: 2em;
 }
 
 h2 {
   margin: 0;
   padding:2% 5%;
-  padding-bottom: 5px;
   color: #3300cc;
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 1.5em;
+  line-height: 1.7em;
 }
 
 /* h4 overwrites bootstrap */
 h4 {
-  margin-top: 15px;
-  margin-bottom: 3px;
-  line-height: 20px;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
   color: #4A4A4A;
   font-weight: 400;
 }
@@ -56,7 +59,6 @@ h4 {
 table {
   margin:2% 5%;
   border: 1px solid white;
-  border-spacing: 0;
 }
 
 /* .table overwrites bootstrap */
@@ -66,7 +68,7 @@ table {
 }
 
 tr, th, td {
-  padding: 6px;
+  padding: 0.2em;
   border: 1px solid white;
 }
 
@@ -82,14 +84,8 @@ tr, th, td {
   background-color: #e6e6fa;
 }
 
-.xsm-text {
-  font-size: 14px;
-  line-height: 17px;
-}
-
 .sm-text {
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 0.9em;
 }
 
 .date-text {
@@ -138,10 +134,6 @@ a:active, a:hover {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-}
-
-.skill {
-  font-size: 18px;
 }
 
 .blue-violet-text {
@@ -218,7 +210,6 @@ ul.nav {
 
 li {
   list-style-type: none;
-  font-size: 16px;
 }
 
 .push-left {
@@ -390,11 +381,19 @@ div.gm-style-iw > div > div {
     line-height: 48px;
   }
 
+  .skillsH3 {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    padding-bottom: 0;
+  }
+
   .header {
     padding-top: 20px;
     padding-bottom: 50px;
   }
-
 }
 
 @media only screen and (min-width: 1024px) {

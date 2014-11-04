@@ -14,27 +14,27 @@ var HTMLskills = "<li class='col-xs-4 col-sm-3 col-md-2 push-left'><span class='
 var HTMLworkStart = "<div class='work-entry'></div>";
 var HTMLworkEmployer = "<h4>%data%";
 var HTMLworkTitle = " - %data%</h4>";
-var HTMLworkDates = "<div class='date-text xsm-text'>%data%</div>";
-var HTMLworkLocation = "<div class='location-text xsm-text'>%data%</div>";
+var HTMLworkDates = "<div class='date-text sm-text'>%data%</div>";
+var HTMLworkLocation = "<div class='location-text sm-text'>%data%</div>";
 var HTMLworkDescription = "<p class='sm-text'><br>%data%</p>";
 
 var HTMLprojectStart = "<div class='project-entry'></div>";
 var HTMLprojectTitle = "<a href='%url%' class='important_link blue-green-text' target='_blank'>%data%</a>";
-var HTMLprojectDates = "<div class='date-text xsm-text'>%data%</div>";
+var HTMLprojectDates = "<div class='date-text sm-text'>%data%</div>";
 var HTMLprojectDescription = "<p class='sm-text'><br>%data%</p>";
 var HTMLprojectImage = "<img src='%data%'>";
 
 var HTMLschoolStart = "<div class='education-entry'></div>";
 var HTMLschoolName = "<h4>%data%";
 var HTMLschoolDegree = " -- %data%</h4>";
-var HTMLschoolDates = "<div class='date-text xsm-text'>%data%</div>";
+var HTMLschoolDates = "<div class='date-text sm-text'>%data%</div>";
 var HTMLschoolMajor = "<em><br>Major: %data%</em>";
-var HTMLschoolLocation = "<div class='location-text xsm-text'>%data%</div>";
+var HTMLschoolLocation = "<div class='location-text sm-text'>%data%</div>";
 
 var HTMLonlineClasses = "<h2 id='onlineClasses' class='blue-violet-text'>Online Classes</h2>";
 var HTMLonlineTitle = "<a href='%classUrl%' class='important_link blue-green-text' target='_blank'>%data%";
 var HTMLonlineSchool = " - %data%</a>";
-var HTMLonlineDates = "<div class='date-text xsm-text'>%data%</div><br/>";
+var HTMLonlineDates = "<div class='date-text sm-text'>%data%</div><br/>";
 var HTMLonlineURL = "<a href='#' class='online-class'>%data%</a>";
 
 var HTMLskillChartTable = "<div><table class='skills-row table table-condensed table-responsive'></table></div>";
