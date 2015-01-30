@@ -1,7 +1,7 @@
 //bio.skills displays better when limited to 6 items
 var bio = {
 	"name" : "Carol Chung",
-	"role" : "Web Developer",
+	"role" : "Front End Web Developer",
 	"contacts" : {
 		"mobile" : "323.325.1553",
 		"email" : "cch5ng@gmail.com",
@@ -13,8 +13,8 @@ var bio = {
 	},
 	"picUrl" : "images/bear_temp.gif",
 	"welcomeMsg" : "Namaste - Honor the spirit in you",
-	"skills" : [" Python", " JavaScript", " HTML", " CSS", " Java", " Selenium"]
-};
+	"skills" : [" Javascript", " HTML", " CSS", " MVC Pattern", " Python", " Testing"]
+}; // " Java", " Selenium" " Object Oriented Programming", 
 
 bio.displayBio = function() {
 	var formattedName = HTMLheaderName.replace(["%data%"],bio.name);
@@ -48,6 +48,53 @@ bio.displaySkills = function() {
 
 bio.displayBio();
 bio.displaySkills();
+
+var project = {
+	"projects" : [
+						{	"title" : "Westwood Faves",
+							"dates" : "Jan 2015 - currently",
+							"description" : "Map web application showing favorite spots around Westwood and allowing search. Skills used: Responsive Design, Javascript DOM Manipulation, JSON.",
+							"url" : "http://cch5ng.github.io/udacity_p5-minicourse-ajax-project/",
+							"source" : "http://https://github.com/cch5ng/frontend-nanodegree-resume/tree/gh-pages"
+						},
+						{	"title" : "Arcade Game",
+							"dates" : "Nov 2014 - Nov 2014",
+							"description" : "Web application recreating classic bug dodging arcade game. Skills used: Javascript, Object Oriented Programming",
+							"url" : "http://cch5ng.github.io/frontend-nanodegree-arcade-game/"
+						},
+						{	"title" : "Portfolio",
+							"dates" : "Oct 2014 - Nov 2014",
+							"description" : "Responsive portfolio site. Skills used: HTML, CSS, Bootstrap, Responsive Design.",
+							"url" : "http://cch5ng.github.io/web_dev1_udacity/project1/bootstrap/portfolio.html"
+						}
+						// {	"title" : "Team Lottery Application",
+						// 	"dates" : "Aug 2013 - Oct 2013",
+						// 	"description" : "Front-end JS application for creating random beach volleyball teams. Test plan, test cases, and Selenium scripts (WebDriver/Python).",
+						// 	"url" : "http://sqa8.wordpress.com/2014/02/24/volleyball-team-app-tests/"
+						// },
+						// {	"title" : "Google Keep Tests",
+						// 	"dates" : "April 2014 - May 2014",
+						// 	"description" : "Test plan, test cases, and Selenium scripts (WebDriver/Python).",
+						// 	"url" : "http://sqa8.wordpress.com/2014/04/18/google-keep-tests/"
+						// } 
+	] 
+};
+
+project.displayProject = function() {
+	for (var proj in project.projects) {
+		$("#projects").append(HTMLprojectStart);
+		var formattedTitle = HTMLprojectTitle.replace(["%data%"], project.projects[proj].title).replace(["%url%"], project.projects[proj].url);
+		var formattedDates = HTMLprojectDates.replace(["%data%"], project.projects[proj].dates);
+		var formattedDescription = HTMLprojectDescription.replace(["%data%"], project.projects[proj].description);
+		//var formattedSource = HTMLprojectSource.replace(["%data%"], project.projects[proj].source);
+		$(".project-entry:last").append(formattedTitle);
+		$(".project-entry:last").append(formattedDates);
+		$(".project-entry:last").append(formattedDescription);
+		//$(".project-entry:last").append(formattedSource);
+	}
+};
+
+project.displayProject();
 
 var work = {
 	"jobs" : [
@@ -101,34 +148,6 @@ work.displayWork = function() {
 
 work.displayWork();
 
-var project = {
-	"projects" : [
-						{	"title" : "Team Lottery Application",
-							"dates" : "Aug 2013 - Oct 2013",
-							"description" : "Front-end JS application for creating random beach volleyball teams. Test plan, test cases, and Selenium scripts (WebDriver/Python).",
-							"url" : "http://sqa8.wordpress.com/2014/02/24/volleyball-team-app-tests/"
-						},
-						{	"title" : "Google Keep Tests",
-							"dates" : "April 2014 - May 2014",
-							"description" : "Test plan, test cases, and Selenium scripts (WebDriver/Python).",
-							"url" : "http://sqa8.wordpress.com/2014/04/18/google-keep-tests/"
-						} 
-	] 
-};
-
-project.displayProject = function() {
-	for (var proj in project.projects) {
-		$("#projects").append(HTMLprojectStart);
-		var formattedTitle = HTMLprojectTitle.replace(["%data%"], project.projects[proj].title).replace(["%url%"], project.projects[proj].url);
-		var formattedDates = HTMLprojectDates.replace(["%data%"], project.projects[proj].dates);
-		var formattedDescription = HTMLprojectDescription.replace(["%data%"], project.projects[proj].description);
-		$(".project-entry:last").append(formattedTitle);
-		$(".project-entry:last").append(formattedDates);
-		$(".project-entry:last").append(formattedDescription);
-	}
-};
-
-project.displayProject();
 
 //note - schools is an array with one element; education.schools.degree and education.schools.major are both arrays with 2 elements
 var education = {
@@ -228,13 +247,7 @@ education.displayOnlineClasses();
 var skillsChart = {
 	skills: [
 				{
-					"name" : "Python",
-					"level" : "Intermediate",
-					"dates" : "2012 - present",
-					"frequency": "Bi-weekly"
-				},
-				{
-					"name" : "JavaScript",
+					"name" : "Javascript (jQuery, Knockout)",
 					"level" : "Intermediate",
 					"dates" : "2010 - present",
 					"frequency": "Weekly" 
@@ -252,41 +265,53 @@ var skillsChart = {
 					"frequency": "Weekly"
 				},
 				{
+					"name" : "Python",
+					"level" : "Intermediate",
+					"dates" : "2012 - present",
+					"frequency": "Monthly"
+				},
+				{
 					"name" : "Git",
 					"level" : "Beginner",
 					"dates" : "2013 - present",
 					"frequency": "Monthly"
 				},
 				{
-					"name" : "Selenium WebDriver",
-					"level" : "Intermediate",
+					"name" : "Testing (Jasmine, Selenium)",
+					"level" : "Beginner",
 					"dates" : "2013 - present",
 					"frequency": "Monthly"
-				},
-				{
-					"name" : "Java",
-					"level" : "Intermediate",
-					"dates" : "2013 - present",
-					"frequency": "Quarterly"
-				},
-				{
-					"name" : "SQL",
-					"level" : "Intermediate",
-					"dates" : "2008 - present",
-					"frequency": "Quarterly" 
-				},
-				{
-					"name" : "Android",
-					"level" : "Beginner",
-					"dates" : "2014 - present",
-					"frequency": "Bi-monthly"
-				},
-				{
-					"name" : "Node.js",
-					"level" : "Beginner",
-					"dates" : "2013 - present",
-					"frequency": "Bi-monthly"
 				}
+				// {
+				// 	"name" : "Selenium WebDriver",
+				// 	"level" : "Intermediate",
+				// 	"dates" : "2013 - present",
+				// 	"frequency": "Monthly"
+				// },
+				// {
+				// 	"name" : "Java",
+				// 	"level" : "Intermediate",
+				// 	"dates" : "2013 - present",
+				// 	"frequency": "Quarterly"
+				// },
+				// {
+				// 	"name" : "SQL",
+				// 	"level" : "Intermediate",
+				// 	"dates" : "2008 - present",
+				// 	"frequency": "Quarterly" 
+				// },
+				// {
+				// 	"name" : "Android",
+				// 	"level" : "Beginner",
+				// 	"dates" : "2014 - present",
+				// 	"frequency": "Bi-monthly"
+				// },
+				// {
+				// 	"name" : "Node.js",
+				// 	"level" : "Beginner",
+				// 	"dates" : "2013 - present",
+				// 	"frequency": "Bi-monthly"
+				// }
 	]
 };
 
