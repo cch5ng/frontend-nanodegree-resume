@@ -281,6 +281,12 @@ var skillsChart = {
 					"level" : "Beginner",
 					"dates" : "2013 - present",
 					"frequency": "Monthly"
+				},
+				{
+					"name" : "Photoshop",
+					"level" : "Intermediate",
+					"dates" : "2012 - present",
+					"frequency": "Monthly"
 				}
 				// {
 				// 	"name" : "Selenium WebDriver",
