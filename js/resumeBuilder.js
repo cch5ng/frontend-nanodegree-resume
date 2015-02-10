@@ -77,7 +77,7 @@ var project = {
 							"description" : "Web animation exploring translation of human emotion onto physical surfaces. Exploration of how animation and color can be used to communicate and to modulate emotion. Skills used: Processing, Photoshop.",
 							"url" : "http://www.openprocessing.org/sketch/165457"
 						},
-						{	"title" : "Spryhanky",
+						{	"title" : "Spryo-Hanky",
 							"dates" : "June 2014",
 							"description" : "Web drawing like the spyrograph toy. Skills used: Processing.",
 							"url" : "http://www.openprocessing.org/sketch/165458"
