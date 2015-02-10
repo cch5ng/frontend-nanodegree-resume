@@ -66,18 +66,23 @@ var project = {
 							"dates" : "Oct 2014 - Nov 2014",
 							"description" : "Responsive portfolio site. Skills used: HTML, CSS, Bootstrap, Responsive Design.",
 							"url" : "http://cch5ng.github.io/web_dev1_udacity/project1/bootstrap/portfolio.html"
-						}
-						// {	"title" : "Team Lottery Application",
-						// 	"dates" : "Aug 2013 - Oct 2013",
-						// 	"description" : "Front-end JS application for creating random beach volleyball teams. Test plan, test cases, and Selenium scripts (WebDriver/Python).",
-						// 	"url" : "http://sqa8.wordpress.com/2014/02/24/volleyball-team-app-tests/"
-						// },
-						// {	"title" : "Google Keep Tests",
-						// 	"dates" : "April 2014 - May 2014",
-						// 	"description" : "Test plan, test cases, and Selenium scripts (WebDriver/Python).",
-						// 	"url" : "http://sqa8.wordpress.com/2014/04/18/google-keep-tests/"
-						// } 
-	] 
+						},
+						{	"title" : "Endangered",
+							"dates" : "July 2014",
+							"description" : "Web drawing with intention to bring attention to endangered African Elephants. Exploration of subtractive drawing. Skills used: Processing, Photoshop.",
+							"url" : "http://www.openprocessing.org/sketch/154115"
+						},
+						{	"title" : "Therapeutic (Anger Management)",
+							"dates" : "March 2014",
+							"description" : "Web animation exploring translation of human emotion onto physical surfaces. Exploration of how animation and color can be used to communicate and to modulate emotion. Skills used: Processing, Photoshop.",
+							"url" : "http://www.openprocessing.org/sketch/165457"
+						},
+						{	"title" : "Spryhanky",
+							"dates" : "June 2014",
+							"description" : "Web drawing like the spyrograph toy. Skills used: Processing.",
+							"url" : "http://www.openprocessing.org/sketch/165458"
+						} 
+	]
 };
 
 project.displayProject = function() {
