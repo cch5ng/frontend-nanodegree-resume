@@ -8,12 +8,12 @@ var bio = {
 		"github" : "cch5ng",
 		"twitter" : "@cch5ng",
 		"location" : "Los Angeles, CA",
-		"blog" : "carrottech",
-		"blogUrl" : "http://carrottech.wordpress.com"
+		"blog" : "Carrotech",
+		"blogUrl" : "http://carrotech.wordpress.com"
 	},
 	"picUrl" : "images/bear_temp.gif",
 	"welcomeMsg" : "Namaste - Honor the spirit in you",
-	"skills" : [" Javascript", " HTML", " CSS", " MVC Pattern", " Python", " Testing"]
+	"skills" : [" JavaScript", " HTML", " CSS", " MVC Pattern", " Python", " Testing"]
 }; // " Java", " Selenium" " Object Oriented Programming", 
 
 bio.displayBio = function() {
@@ -160,6 +160,11 @@ var education = {
 						}
 	],
 	"onlineClasses": [ 
+						{	"title" : "Shaping up with Angular.js",
+							"school" : "Code School",
+							"dates" : "Jan. 2015 - Feb. 2015",
+							"url" : "https://www.codeschool.com/courses/shaping-up-with-angular-js"
+						},
 						{	"title" : "Intro to HTML and CSS (Front-end Web Dev Nanodegree series)",
 							"school" : "Udacity",
 							"dates" : "10/2014 - present",
