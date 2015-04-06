@@ -179,9 +179,6 @@ span {
   width: 100%;
   padding-bottom: 5%; }
 
-div.gm-style-iw > div > div {
-  font-weight: bold; }
-
 .transparent {
   opacity: 0.9; }
 
@@ -239,9 +236,11 @@ div.gm-style-iw > div > div {
   .letsConnect {
     margin-top: 5%; } }
 /* overwriting bootstrap.min.css*/
- * .navbar-nav>li>a
- *   padding-top: 5px
- *   padding-bottom: 5px
+ * .navbar-nav
+ *   li
+ *     a
+ *       padding-top: 5px
+ *       padding-bottom: 5px
  *
  * .navbar
  *   border-radius: 0
@@ -264,5 +263,9 @@ div.gm-style-iw > div > div {
 @media only screen and (min-width: 1024px) {
   .letsConnect {
     margin-top: 3%; } }
+/* div.gm-style-iw
+ * div
+ *   div
+ *     font-weight: bold */
 
 /*# sourceMappingURL=style.css.map */
