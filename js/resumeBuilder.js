@@ -51,37 +51,47 @@ bio.displaySkills();
 
 var project = {
 	"projects" : [
+						{	"title" : "Random Interview Questions",
+							"dates" : "March 2015",
+							"description" : "Web application for Front End Developer Interviews. Skills used: Angular.js and Responsive Design",
+							"url" : "http://cch5ng.github.io/angular_front_end_interview",
+							"source" : "https://github.com/cch5ng/angular_front_end_interview/tree/gh-pages"
+						},
 						{	"title" : "Westwood Faves",
-							"dates" : "Jan 2015 - currently",
+							"dates" : "Jan 2015",
 							"description" : "Map web application showing favorite spots around Westwood and allowing search. Skills used: Responsive Design, Javascript DOM Manipulation, JSON.",
 							"url" : "http://cch5ng.github.io/udacity_p5-minicourse-ajax-project/",
-							"source" : "http://https://github.com/cch5ng/frontend-nanodegree-resume/tree/gh-pages"
+							"source" : "https://github.com/cch5ng/frontend-nanodegree-resume/tree/gh-pages"
 						},
 						{	"title" : "Arcade Game",
 							"dates" : "Nov 2014 - Nov 2014",
 							"description" : "Web application recreating classic bug dodging arcade game. Skills used: Javascript, Object Oriented Programming",
-							"url" : "http://cch5ng.github.io/frontend-nanodegree-arcade-game/"
+							"url" : "http://cch5ng.github.io/frontend-nanodegree-arcade-game/",
+							"source" : ""
 						},
 						{	"title" : "Portfolio",
 							"dates" : "Oct 2014 - Nov 2014",
 							"description" : "Responsive portfolio site. Skills used: HTML, CSS, Bootstrap, Responsive Design.",
-							"url" : "http://cch5ng.github.io/web_dev1_udacity/project1/bootstrap/portfolio.html"
+							"url" : "http://cch5ng.github.io/web_dev1_udacity/project1/bootstrap/portfolio.html",
+							"source" : ""
 						},
 						{	"title" : "Endangered",
 							"dates" : "July 2014",
 							"description" : "Web drawing with intention to bring attention to endangered African Elephants. Exploration of subtractive drawing. Skills used: Processing, Photoshop.",
-							"url" : "http://www.openprocessing.org/sketch/154115"
-						},
-						{	"title" : "Therapeutic (Anger Management)",
-							"dates" : "March 2014",
-							"description" : "Web animation exploring translation of human emotion onto physical surfaces. Exploration of how animation and color can be used to communicate and to modulate emotion. Skills used: Processing, Photoshop.",
-							"url" : "http://www.openprocessing.org/sketch/165457"
+							"url" : "http://www.openprocessing.org/sketch/154115",
+							"source" : ""
 						},
 						{	"title" : "Spryo-Hanky",
 							"dates" : "June 2014",
 							"description" : "Web drawing like the spyrograph toy. Skills used: Processing.",
-							"url" : "http://www.openprocessing.org/sketch/165458"
-						} 
+							"url" : "http://www.openprocessing.org/sketch/165458",
+							"source" : ""
+						} //,
+						// {	"title" : "Therapeutic (Anger Management)",
+						// 	"dates" : "March 2014",
+						// 	"description" : "Web animation exploring translation of human emotion onto physical surfaces. Exploration of how animation and color can be used to communicate and to modulate emotion. Skills used: Processing, Photoshop.",
+						// 	"url" : "http://www.openprocessing.org/sketch/165457"
+						// }
 	]
 };
 
@@ -257,94 +267,57 @@ education.displayOnlineClasses();
 var skillsChart = {
 	skills: [
 				{
-					"name" : "Javascript (jQuery, Knockout)",
-					"level" : "Intermediate",
-					"dates" : "2010 - present",
-					"frequency": "Weekly" 
+					"col1" : "JavaScript >",
+					"col2" : "native + jQuery",
+					"col3" : "Angular.js" 
 				},
 				{
-					"name" : "HTML",
-					"level" : "Intermediate",
-					"dates" : "1998 - present",
-					"frequency": "Weekly" 
+					"col1" : "CSS3 >",
+					"col2" : "Bootstrap",
+					"col3" : "SASS" 
 				},
 				{
-					"name" : "CSS",
-					"level" : "Intermediate",
-					"dates" : "2003 - present",
-					"frequency": "Weekly"
+					"col1" : "HTML5",
+					"col2" : "Python",
+					"col3" : "SQL" 
 				},
 				{
-					"name" : "Python",
-					"level" : "Intermediate",
-					"dates" : "2012 - present",
-					"frequency": "Monthly"
+					"col1" : "Testing >",
+					"col2" : "Jasmine",
+					"col3" : "Selenium WebDriver" 
 				},
 				{
-					"name" : "Git",
-					"level" : "Beginner",
-					"dates" : "2013 - present",
-					"frequency": "Monthly"
+					"col1" : "Git",
+					"col2" : "Grunt",
+					"col3" : " "
 				},
 				{
-					"name" : "Testing (Jasmine, Selenium)",
-					"level" : "Beginner",
-					"dates" : "2013 - present",
-					"frequency": "Monthly"
+					"col1" : "Wireframing >",
+					"col2" : "OmniGraffle",
+					"col3" : "Balsamiq"
 				},
 				{
-					"name" : "Photoshop",
-					"level" : "Intermediate",
-					"dates" : "2012 - present",
-					"frequency": "Monthly"
+					"col1" : "Photoshop",
+					"col2" : "Processing",
+					"col3" : "Technical Writing"
 				}
-				// {
-				// 	"name" : "Selenium WebDriver",
-				// 	"level" : "Intermediate",
-				// 	"dates" : "2013 - present",
-				// 	"frequency": "Monthly"
-				// },
-				// {
-				// 	"name" : "Java",
-				// 	"level" : "Intermediate",
-				// 	"dates" : "2013 - present",
-				// 	"frequency": "Quarterly"
-				// },
-				// {
-				// 	"name" : "SQL",
-				// 	"level" : "Intermediate",
-				// 	"dates" : "2008 - present",
-				// 	"frequency": "Quarterly" 
-				// },
-				// {
-				// 	"name" : "Android",
-				// 	"level" : "Beginner",
-				// 	"dates" : "2014 - present",
-				// 	"frequency": "Bi-monthly"
-				// },
-				// {
-				// 	"name" : "Node.js",
-				// 	"level" : "Beginner",
-				// 	"dates" : "2013 - present",
-				// 	"frequency": "Bi-monthly"
-				// }
 	]
 };
 
 skillsChart.displaySkills = function() {
 	$("#skillsChart").append(HTMLskillChartTable);
 	$(".skills-row").append(HTMLskillChartRow);
-	$(".skills-entry:last").append(HTMLskillChartHeadings);
+
 	for (var skill in skillsChart.skills) {
 		$(".skills-row").append(HTMLskillChartRow);
-		var formattedSkillsName = HTMLskillChartName.replace(["%data%"], skillsChart.skills[skill].name);
-		var formattedSkillsLevel = HTMLskillChartLevel.replace(["%data%"], skillsChart.skills[skill].level);
-		var formattedSkillsDates = HTMLskillChartDates.replace(["%data%"], skillsChart.skills[skill].dates);
-		var formattedSkillsFrequency = HTMLskillChartFrequency.replace(["%data%"], skillsChart.skills[skill].frequency);
-		$(".skills-entry:last").append(formattedSkillsName);
-		$(".skills-entry:last").append(formattedSkillsLevel);
-		$(".skills-entry:last").append(formattedSkillsDates);
-		$(".skills-entry:last").append(formattedSkillsFrequency);
+		var formattedSkillsCol1 = HTMLskillCol1.replace(["%data%"], skillsChart.skills[skill].col1);
+		var formattedSkillsCol2 = HTMLskillCol2.replace(["%data%"], skillsChart.skills[skill].col2);
+		var formattedSkillsCol3 = HTMLskillCol3.replace(["%data%"], skillsChart.skills[skill].col3);
+
+
+		$(".skills-entry:last").append(formattedSkillsCol1);
+		$(".skills-entry:last").append(formattedSkillsCol2);
+		$(".skills-entry:last").append(formattedSkillsCol3);
 	}
 };
 
