@@ -1,5 +1,9 @@
 /* vars */
 /* global styles */
+.horizontal-padding-5, .education-entry, .work-entry, .project-entry, .map {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 body {
   padding: 0;
   margin: 0;
@@ -11,10 +15,6 @@ body {
 
 .skill {
   font-size: 18px; }
-
-.education-entry, .work-entry, .project-entry {
-  padding-left: 5%;
-  padding-right: 5%; }
 
 .header {
   padding-top: 2%;
@@ -170,9 +170,7 @@ span {
 
 .map {
   display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%; }
+  height: 100%; }
 
 .mapDiv {
   height: 400px;

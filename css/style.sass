@@ -8,6 +8,9 @@ $grey-background: #F3F3F3
 $active-link-color: #36DBCA
 
 /* global styles */
+.horizontal-padding-5
+  padding-left: 5%
+  padding-right: 5%
 
 body
   padding: 0
@@ -22,8 +25,7 @@ body
   font-size: 18px
 
 .education-entry, .work-entry, .project-entry
-  padding-left: 5%
-  padding-right: 5%
+  @extend .horizontal-padding-5
 
 .header
   padding-top: 2%
@@ -179,10 +181,9 @@ span
   text-align: center
 
 .map
+  @extend .horizontal-padding-5
   display: block
   height: 100%
-  margin-left: 5%
-  margin-right: 5%
 
 .mapDiv
   height: 400px
